@@ -1,4 +1,4 @@
-﻿<footer class="site-footer" role="contentinfo" aria-label="Hytrak Rail Corporation Footer">
+<footer class="site-footer" role="contentinfo" aria-label="Hytrak Rail Corporation Footer">
     <div class="container">
         <div class="footer-top">
             <div class="footer-brand-block">

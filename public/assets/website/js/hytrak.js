@@ -9,12 +9,18 @@
 
     /* -------- Nav Scroll -------- */
     const nav = document.getElementById('main-nav');
+
+    function updateNavState() {
+      if (!nav) return;
+      nav.classList.toggle('scrolled', window.scrollY > 72);
+    }
+
     if (nav) {
-      function handleNavScroll() {
-        nav.classList.toggle('scrolled', window.scrollY > 60);
-      }
-      window.addEventListener('scroll', handleNavScroll, { passive: true });
-      handleNavScroll();
+      window.addEventListener('scroll', updateNavState, { passive: true });
+      window.addEventListener('resize', updateNavState);
+      window.addEventListener('hashchange', updateNavState);
+      updateNavState();
+      window.addEventListener('load', updateNavState);
     }
 
     /* -------- Hamburger / Mobile Menu -------- */

@@ -1,6 +1,4 @@
-﻿<!-- Spotlight cursor -->
 <div class="spotlight" id="spotlight" aria-hidden="true"></div>
-
 <nav id="main-nav" role="navigation" aria-label="Main navigation">
     <div class="container">
         <div class="nav-inner">
@@ -31,7 +29,6 @@
         </div>
     </div>
 </nav>
-
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
     <a href="{{ route('index') }}">Home</a>
     <a href="{{ route('index') }}#how-it-works">Technology</a>

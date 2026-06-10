@@ -34,16 +34,11 @@
 
     @stack('schema')
 </head>
-<body>
-    @include('layouts.website.header')
-
-    <main>
+<body class="hytrak-site">@include('layouts.website.header')<main>
         @yield('content')
-    </main>
 
-    @include('layouts.website.footer')
-
-    <script src="{{ asset('assets/website/js/hytrak.js') }}" defer></script>
+        @include('layouts.website.footer')
+    </main><script src="{{ asset('assets/website/js/hytrak.js') }}" defer></script>
     @stack('scripts')
 </body>
 </html>

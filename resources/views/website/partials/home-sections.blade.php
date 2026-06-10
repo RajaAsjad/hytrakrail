@@ -1017,9 +1017,9 @@
       </div>
 
       <!-- Quick Contact Form -->
-      <div class="contact-form-mini mx-auto reveal" style="margin-top:64px;" id="quick-contact" aria-label="Quick contact form">
-        <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:1.5rem; font-weight:800; text-transform:uppercase; margin-bottom:8px;">Send Us a Quick Message</h3>
-        <p style="font-size:0.875rem; color:var(--gray-text); margin-bottom:28px;">We respond to all serious inquiries within 48 hours.</p>
+      <div class="contact-form-mini mx-auto reveal" id="quick-contact" aria-label="Quick contact form">
+        <h3 class="contact-form-mini__title">Send Us a Quick Message</h3>
+        <p class="contact-form-mini__desc">We respond to all serious inquiries within 48 hours.</p>
 
         <form action="#" method="post" novalidate aria-label="Quick contact form">
           <div class="form-row">
@@ -1048,7 +1048,7 @@
             <label for="quick-message">Message *</label>
             <textarea id="quick-message" name="message" placeholder="Tell us about your project, corridor, or investment interest..." required aria-required="true"></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;" aria-label="Submit quick contact form">
+          <button type="submit" class="btn-primary" aria-label="Submit quick contact form">
             Send Message
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
