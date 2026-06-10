@@ -1671,6 +1671,27 @@
       font-size: 1rem;
       letter-spacing: 0.08em;
     }
+    .form-alert {
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .form-alert--success {
+      background: rgba(0, 200, 255, 0.12);
+      border: 1px solid rgba(0, 200, 255, 0.35);
+      color: var(--cyan);
+    }
+    .form-alert--error {
+      background: rgba(255, 85, 85, 0.1);
+      border: 1px solid rgba(255, 85, 85, 0.35);
+      color: #ff8a8a;
+    }
+    .form-error {
+      font-size: 0.78rem;
+      color: #ff8a8a;
+    }
     @media (max-width: 600px) {
       .contact-form-mini {
         padding: 28px 24px 32px;

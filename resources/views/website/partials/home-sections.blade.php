@@ -1021,32 +1021,47 @@
         <h3 class="contact-form-mini__title">Send Us a Quick Message</h3>
         <p class="contact-form-mini__desc">We respond to all serious inquiries within 48 hours.</p>
 
-        <form action="#" method="post" novalidate aria-label="Quick contact form">
+        <form action="{{ route('quick-contact.submit') }}" method="post" novalidate aria-label="Quick contact form">
+          @csrf
+
+          @if (session('contact_success'))
+            <div class="form-alert form-alert--success" role="status">{{ session('contact_success') }}</div>
+          @endif
+
+          @if ($errors->any())
+            <div class="form-alert form-alert--error" role="alert">
+              Please fix the highlighted fields and try again.
+            </div>
+          @endif
+
           <div class="form-row">
             <div class="form-group">
               <label for="quick-name">Full Name *</label>
-              <input type="text" id="quick-name" name="name" placeholder="Jane Smith" required autocomplete="name" aria-required="true" />
+              <input type="text" id="quick-name" name="name" placeholder="Jane Smith" required autocomplete="name" aria-required="true" value="{{ old('name') }}" @error('name') aria-invalid="true" @enderror />
+              @error('name')<span class="form-error">{{ $message }}</span>@enderror
             </div>
             <div class="form-group">
               <label for="quick-email">Email Address *</label>
-              <input type="email" id="quick-email" name="email" placeholder="jane@example.com" required autocomplete="email" aria-required="true" />
+              <input type="email" id="quick-email" name="email" placeholder="jane@example.com" required autocomplete="email" aria-required="true" value="{{ old('email') }}" @error('email') aria-invalid="true" @enderror />
+              @error('email')<span class="form-error">{{ $message }}</span>@enderror
             </div>
           </div>
           <div class="form-group">
             <label for="quick-type">Inquiry Type</label>
             <select id="quick-type" name="type" aria-label="Select inquiry type">
               <option value="">Select your interest...</option>
-              <option value="investor">Investment Opportunity</option>
-              <option value="partnership">Government / Agency Partnership</option>
-              <option value="pilot">Pilot Corridor Proposal</option>
-              <option value="demo">Request a Demo</option>
-              <option value="media">Press / Media</option>
-              <option value="other">General Inquiry</option>
+              <option value="investor" @selected(old('type') === 'investor')>Investment Opportunity</option>
+              <option value="partnership" @selected(old('type') === 'partnership')>Government / Agency Partnership</option>
+              <option value="pilot" @selected(old('type') === 'pilot')>Pilot Corridor Proposal</option>
+              <option value="demo" @selected(old('type') === 'demo')>Request a Demo</option>
+              <option value="media" @selected(old('type') === 'media')>Press / Media</option>
+              <option value="other" @selected(old('type') === 'other')>General Inquiry</option>
             </select>
           </div>
           <div class="form-group">
             <label for="quick-message">Message *</label>
-            <textarea id="quick-message" name="message" placeholder="Tell us about your project, corridor, or investment interest..." required aria-required="true"></textarea>
+            <textarea id="quick-message" name="message" placeholder="Tell us about your project, corridor, or investment interest..." required aria-required="true" @error('message') aria-invalid="true" @enderror>{{ old('message') }}</textarea>
+            @error('message')<span class="form-error">{{ $message }}</span>@enderror
           </div>
           <button type="submit" class="btn-primary" aria-label="Submit quick contact form">
             Send Message
