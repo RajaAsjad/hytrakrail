@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hytrak Rail">
+  <rect width="64" height="64" rx="10" fill="#000d2e"/>
+  <polygon points="14,32 26,18 26,26 34,26 34,20 46,32 34,44 34,38 26,38 26,46" fill="#C0392B"/>
+  <polygon points="18,32 28,22 28,28 36,28 36,24 44,32 36,40 36,36 28,36 28,42" fill="#003087" opacity="0.75"/>
+</svg>
