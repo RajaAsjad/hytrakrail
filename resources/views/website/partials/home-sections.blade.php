@@ -27,7 +27,7 @@
         </h1>
 
         <p class="hero-sub">
-          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger pods. Zero emissions. 50× cheaper to build than traditional high-speed rail. The future of intercity transit is here.
+          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger cars. Zero emissions. 50× cheaper to build than traditional high-speed rail. The future of intercity transit is here.
         </p>
 
         <div class="hero-actions">
@@ -200,7 +200,7 @@
           How <span class="text-cyan">Hytrak</span> Works
         </h2>
         <p class="section-desc mx-auto" style="text-align:center;">
-          An elegantly simple inverted monorail system. Pods hang below a lightweight elevated rail, eliminating derailment risk while enabling unprecedented speeds in all weather conditions.
+          An elegantly simple inverted monorail system. Cars hang below a lightweight elevated rail, eliminating derailment risk while enabling unprecedented speeds in all weather conditions.
         </p>
       </div>
 
@@ -215,19 +215,19 @@
           <div class="step-num" aria-label="Step 2">02</div>
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           <h4>Inverted Rail Beam</h4>
-          <p>Pods suspend below the rail using a gravity-assisted bogie system — physics itself keeps the pod stable and derailment-proof at speed.</p>
+          <p>Cars suspend below the rail using a gravity-assisted bogie system — physics itself keeps the car stable and derailment-proof at speed.</p>
         </div>
         <div class="step-card reveal" style="transition-delay:0.16s;">
           <div class="step-num" aria-label="Step 3">03</div>
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <h4>Private 4-Passenger Pods</h4>
-          <p>Each pod carries up to 4 passengers. Non-stop, point-to-point travel. No shared carriages. No intermediate stops unless you choose them.</p>
+          <h4>Private 4-Passenger Cars</h4>
+          <p>Each car carries up to 4 passengers. Non-stop, point-to-point travel. No shared carriages. No intermediate stops unless you choose them.</p>
         </div>
         <div class="step-card reveal" style="transition-delay:0.24s;">
           <div class="step-num" aria-label="Step 4">04</div>
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
           <h4>App-Based Booking</h4>
-          <p>Book your pod like an Uber — choose origin, destination, departure time. Arrive at your hub, board instantly, arrive refreshed.</p>
+          <p>Book your car like an Uber — choose origin, destination, departure time. Arrive at your hub, board instantly, arrive refreshed.</p>
         </div>
       </div>
 
@@ -282,7 +282,7 @@
           <div style="border-radius:24px; overflow:hidden; border:1px solid var(--border); aspect-ratio:4/3; background:var(--dark-card); position:relative;">
             <img
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop"
-              alt="Elevated rail infrastructure viewed from below — representing the Hytrak elevated pod system over a highway corridor"
+              alt="Elevated rail infrastructure viewed from below — representing the Hytrak elevated car system over a highway corridor"
               style="width:100%; height:100%; object-fit:cover;"
               loading="lazy"
             />
@@ -310,14 +310,14 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <h4>Private Experience</h4>
-          <p>Your pod. Your schedule. No strangers, no delays, no shared cabins.</p>
+          <p>Your car. Your schedule. No strangers, no delays, no shared cabins.</p>
         </div>
         <div class="benefit-card reveal" style="transition-delay:0.1s;">
           <div class="benefit-icon-wrap">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h4>All-Weather Reliable</h4>
-          <p>Fully enclosed pods and elevated track mean no weather cancellations — ever.</p>
+          <p>Fully enclosed cars and elevated track mean no weather cancellations — ever.</p>
         </div>
         <!-- Row 2 -->
         <div class="benefit-card reveal" style="transition-delay:0.0s;">
@@ -340,7 +340,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <h4>Quick Boarding</h4>
-          <p>No TSA. No long platforms. Board your pod in under 5 minutes from hub arrival.</p>
+          <p>No TSA. No long platforms. Board your car in under 5 minutes from hub arrival.</p>
         </div>
         <div class="benefit-card reveal" style="transition-delay:0.15s;">
           <div class="benefit-icon-wrap">
@@ -380,7 +380,7 @@
             </div>
             <div class="tech-spec-item">
               <div class="spec-val">4</div>
-              <div class="spec-label">Passengers / Pod</div>
+              <div class="spec-label">Passengers / Car</div>
             </div>
             <div class="tech-spec-item">
               <div class="spec-val">100ft</div>
@@ -415,6 +415,59 @@
         </div>
 
       </div>
+
+      <!-- Siemens Engineering & Automation Partnership -->
+      <div class="tech-partnership reveal" aria-labelledby="siemens-partnership-heading">
+        <div class="tech-partnership__card">
+          <div class="tech-partnership__top">
+            <div class="tech-partnership__brand">
+              <span class="tech-partnership__eyebrow">Strategic Partnership</span>
+              <a
+                href="https://www.siemens.com/en-us/"
+                class="tech-partnership__logo-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Siemens website (opens in new tab)"
+              >
+                <img
+                  src="{{ asset('assets/website/siemens-logo.svg') }}"
+                  alt="Siemens"
+                  class="tech-partnership__logo"
+                  width="180"
+                  height="32"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div class="tech-partnership__content">
+              <h3 class="tech-partnership__title" id="siemens-partnership-heading">
+                Engineering &amp; Automation Partnership
+              </h3>
+              <p class="tech-partnership__desc">
+                Hytrak Rail partners with <strong>Siemens</strong> to bring world-class industrial automation, digital twin simulation, and smart infrastructure expertise to our elevated rail platform — from prototype validation through corridor-scale deployment.
+              </p>
+              <a
+                href="https://www.siemens.com/en-us/"
+                class="tech-partnership__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore Siemens
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <ul class="tech-partnership__tags" role="list">
+            <li>Industrial Automation</li>
+            <li>Digital Twin &amp; Simulation</li>
+            <li>Smart Infrastructure</li>
+            <li>Predictive Maintenance</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -466,7 +519,7 @@
               <div class="timeline-body">
                 <span>2022</span>
                 <h4>Full-Scale Prototype Fabricated</h4>
-                <p>The Hytrak team completes construction of a full-scale prototype pod and track section in Lake County, California.</p>
+                <p>The Hytrak team completes construction of a full-scale prototype car and track section in Lake County, California.</p>
               </div>
             </div>
             <div class="timeline-item" role="listitem">
@@ -496,7 +549,7 @@
               <div class="timeline-body">
                 <span>2026+ — Next Phase</span>
                 <h4>First Commercial Corridor Launch</h4>
-                <p>Target: Initial commercial pilot corridor with fully operational pods and public booking platform.</p>
+                <p>Target: Initial commercial pilot corridor with fully operational cars and public booking platform.</p>
               </div>
             </div>
           </div>
@@ -525,11 +578,11 @@
           <div class="proto-gallery-item">
             <img
               src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80&auto=format&fit=crop"
-              alt="Interior view of a sleek modern passenger pod representing the Hytrak 4-passenger private pod experience"
+              alt="Interior view of a sleek modern passenger car representing the Hytrak 4-passenger private car experience"
               loading="lazy"
             />
             <div class="proto-gallery-overlay" aria-hidden="true"></div>
-            <div class="proto-gallery-label">Pod Interior Concept</div>
+            <div class="proto-gallery-label">Car Interior Concept</div>
           </div>
 
           <div style="grid-column:span 2; margin-top:16px; text-align:center;">
@@ -604,7 +657,7 @@
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </div>
           <h4>Manufacturing & Deployment</h4>
-          <p>Modular, repeatable pod and tower manufacturing designed for rapid scaled production. From the factory floor to operational track — we manage it all.</p>
+          <p>Modular, repeatable car and tower manufacturing designed for rapid scaled production. From the factory floor to operational track — we manage it all.</p>
         </div>
 
         <div class="service-card reveal" style="transition-delay:0.14s;">
@@ -689,7 +742,7 @@
               <td><span class="partial-icon" aria-label="Partial">~</span></td>
             </tr>
             <tr>
-              <td>Private Pod Experience</td>
+              <td>Private Car Experience</td>
               <td class="hytrak-col"><span class="check-icon" aria-label="Yes">✓</span></td>
               <td><span class="cross-icon" aria-label="No">✗</span></td>
               <td><span class="cross-icon" aria-label="No">✗</span></td>
@@ -853,7 +906,7 @@
           <div class="news-card-body">
             <span class="news-tag">Prototype</span>
             <h4>Hytrak Completes Full-Scale Prototype in Lake County</h4>
-            <p>The Hytrak team successfully built and began testing the first full-scale inverted monorail pod and track system at their Lake County, California facility.</p>
+            <p>The Hytrak team successfully built and began testing the first full-scale inverted monorail car and track system at their Lake County, California facility.</p>
             <div class="news-card-meta">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               <span>June 2023</span>

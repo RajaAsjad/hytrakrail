@@ -10,7 +10,7 @@
                         <text x="44" y="35" font-family="Inter, sans-serif" font-size="8.5" font-weight="500" fill="#8a9bb8" letter-spacing="2.5">RAIL CORPORATION</text>
                     </svg>
                 </a>
-                <p class="footer-tagline">Private pods. 250 mph. Zero emissions. Elevated high-speed rail — built and proven in Lake County, California.</p>
+                <p class="footer-tagline">Private cars. 250 mph. Zero emissions. Elevated high-speed rail — built and proven in Lake County, California.</p>
                 <div class="footer-contact-pills">
                     <span>Lakeport, CA 95453</span>
                     <span>Patented Technology</span>

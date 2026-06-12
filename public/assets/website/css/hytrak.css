@@ -995,6 +995,135 @@
       .tech-specs { grid-template-columns: 1fr 1fr; }
     }
 
+    /* Siemens partnership */
+    .tech-partnership {
+      margin-top: 72px;
+      position: relative;
+      z-index: 1;
+    }
+    .tech-partnership__card {
+      background: linear-gradient(135deg, rgba(0, 153, 153, 0.08) 0%, rgba(0, 200, 255, 0.05) 50%, rgba(255, 255, 255, 0.02) 100%);
+      border: 1px solid rgba(0, 200, 255, 0.22);
+      border-radius: 24px;
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .tech-partnership__card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #009999 0%, var(--cyan) 50%, rgba(0, 200, 255, 0.2) 100%);
+    }
+    .tech-partnership__top {
+      display: grid;
+      grid-template-columns: minmax(180px, 220px) 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .tech-partnership__eyebrow {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #33d4cc;
+      margin-bottom: 20px;
+    }
+    .tech-partnership__logo-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 13, 46, 0.55);
+      border: 1px solid rgba(0, 200, 255, 0.18);
+      border-radius: 16px;
+      padding: 22px 28px;
+      transition: border-color 0.25s, background 0.25s, transform 0.25s;
+    }
+    .tech-partnership__logo-link:hover {
+      border-color: rgba(0, 200, 255, 0.45);
+      background: rgba(0, 20, 60, 0.75);
+      transform: translateY(-2px);
+    }
+    .tech-partnership__logo {
+      width: 180px;
+      height: auto;
+      display: block;
+    }
+    .tech-partnership__title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--white);
+      margin-bottom: 12px;
+      line-height: 1.1;
+    }
+    .tech-partnership__desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--gray-text);
+      max-width: 56ch;
+      margin-bottom: 20px;
+    }
+    .tech-partnership__desc strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+    .tech-partnership__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      transition: color 0.2s, gap 0.2s;
+    }
+    .tech-partnership__link:hover {
+      color: #66e0ff;
+      gap: 12px;
+    }
+    .tech-partnership__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      margin: 28px 0 0;
+      padding: 28px 0 0;
+      border-top: 1px solid rgba(0, 200, 255, 0.12);
+    }
+    .tech-partnership__tags li {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--off-white);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(0, 200, 255, 0.15);
+      border-radius: 100px;
+      padding: 8px 14px;
+    }
+    @media (max-width: 768px) {
+      .tech-partnership { margin-top: 48px; }
+      .tech-partnership__card { padding: 28px 24px; }
+      .tech-partnership__top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .tech-partnership__logo-link {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+
     /* =============================================
        SECTION 6: PROTOTYPE & PROGRESS
     ============================================= */
