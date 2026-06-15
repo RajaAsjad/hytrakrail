@@ -5,11 +5,11 @@
     <a href="{{ route('dashboard') }}" class="header-logo-link" aria-label="Hytrak Rail — Admin home">
         @if ($adminLogo !== '')
             <img id="header-logo" class="admin-header-logo-img"
-                src="{{ asset('admin/assets/images/page/' . $adminLogo) }}"
+                src="{{ asset('public/admin/assets/images/page/' . $adminLogo) }}"
                 alt="Hytrak Rail Corporation">
         @else
             <img id="header-logo" class="admin-header-logo-img"
-                src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
+                src="{{ asset('public/assets/website/images/hytrak-logo-white.png') }}"
                 alt="Hytrak Rail Corporation">
         @endif
     </a>
