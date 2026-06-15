@@ -26,13 +26,13 @@
         <link rel="icon" href="{{ asset('admin/assets/images/page/' . $adminFav) }}"
             @if ($adminFavMime !== '') type="{{ $adminFavMime }}" @endif sizes="32x32">
     @else
-        <link rel="icon" href="{{ asset('assets/website/favicon-po.svg') }}" type="image/svg+xml"
+        <link rel="icon" href="{{ asset('assets/website/favicon.svg') }}" type="image/svg+xml"
             sizes="any">
-        <link rel="apple-touch-icon" href="{{ asset('assets/website/favicon-po.svg') }}">
+        <link rel="apple-touch-icon" href="{{ asset('assets/website/favicon.svg') }}">
     @endif
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/ionicons.min.css') }}">
@@ -63,7 +63,7 @@
         .skin-blue .main-sidebar,
         .content-header .content-header-right a,
         .content .form-horizontal .btn-success {
-             background-color: #2c2419 !important;
+             background-color: #000d2e !important;
             /* background-image: url('{{ asset("assets/website/images/login.png") }}');
             background-size: cover;
             background-position: center; */
@@ -109,14 +109,14 @@
         a.btn.btn-primary.btn-sm:hover {
             color: #fff !important;
             background: var(--admin-gradient) !important;
-            border-color: rgba(168, 90, 50, 0.4) !important;
+            border-color: rgba(0, 200, 255, 0.4) !important;
             font-weight: 700;
         }
 
         button.btn.btn-success.pull-left:hover {
             color: #fff !important;
             background: var(--admin-gradient) !important;
-            border-color: rgba(168, 90, 50, 0.4) !important;
+            border-color: rgba(0, 200, 255, 0.4) !important;
         }
 
         .content-header>h1,
@@ -131,7 +131,7 @@
 
         .main-header .navbar .nav>li>a:hover,
         .main-header .navbar .nav .open>a {
-            background-color: rgba(168, 90, 50, 0.2) !important;
+            background-color: rgba(0, 200, 255, 0.15) !important;
         }
 
         .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
@@ -150,7 +150,7 @@
             background: var(--admin-gradient-hover) !important;
             border-radius: 30px !important;
             transition: all 0.25s ease-in-out !important;
-            box-shadow: 0 0 0 3px rgba(168, 90, 50, 0.35) !important;
+            box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.35) !important;
         }
 
         .box.box-info {

@@ -1,14 +1,16 @@
 <header class="main-header admin-header">
-    <a href="{{ route('dashboard') }}" class="header-logo-link" aria-label="Patrick Okeke home">
-        @if (!empty($home_page_data['header_logo']))
+    @php
+        $adminLogo = trim($home_page_data['header_logo'] ?? '');
+    @endphp
+    <a href="{{ route('dashboard') }}" class="header-logo-link" aria-label="Hytrak Rail — Admin home">
+        @if ($adminLogo !== '')
             <img id="header-logo" class="admin-header-logo-img"
-                src="{{ asset('admin/assets/images/page/' . $home_page_data['header_logo']) }}"
-                alt="Patrick Okeke">
+                src="{{ asset('admin/assets/images/page/' . $adminLogo) }}"
+                alt="Hytrak Rail Corporation">
         @else
-            <span class="admin-header-logo-fallback">
-                <span class="admin-header__mark" aria-hidden="true">PO</span>
-                <span class="admin-header__name">Patrick Okeke</span>
-            </span>
+            <img id="header-logo" class="admin-header-logo-img"
+                src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
+                alt="Hytrak Rail Corporation">
         @endif
     </a>
     <nav class="navbar navbar-static-top">
@@ -16,7 +18,7 @@
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
-        <span class="admin-panel-title">Admin Panel</span>
+        <span class="admin-panel-title">Hytrak Admin</span>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li>
@@ -60,7 +62,6 @@
         margin: 0px 0 20px 0 !important;
         font-size: 22px;
     }
-    /* Hide logo on scroll only on mobile */
     @media (max-width: 767px) {
         .admin-header.header-scrolled .header-logo-link {
             visibility: hidden;
@@ -68,10 +69,9 @@
             pointer-events: none;
         }
     }
-    /* Admin header: fully mobile responsive */
     .admin-header .header-logo-link { display: block; }
     .admin-header #header-logo,
-    .admin-header .admin-header-logo-fallback {
+    .admin-header .admin-header-logo-img {
         width: 210px;
         max-width: 100%;
         height: 80px;
@@ -82,36 +82,16 @@
         top: 100%;
     }
 
-    .admin-header .admin-header-logo-fallback {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        object-fit: unset;
-    }
-
-    .admin-header__mark {
-        flex-shrink: 0;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--admin-font-display, 'Fraunces', Georgia, serif);
-        font-weight: 600;
-        font-size: 0.9rem;
-        border-radius: 6px;
-        background: #f7f4ee;
-        color: var(--admin-shell, #2c2419);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .admin-header__name {
-        font-weight: 700;
-        font-size: 1.05rem;
+    .admin-header .admin-panel-title {
+        float: left;
+        line-height: 50px;
         color: #fff;
-        letter-spacing: -0.02em;
-        line-height: 1.15;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        padding-left: 10px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
     .admin-header .navbar { display: flex; flex-wrap: wrap; align-items: center; min-height: 50px; }
     .admin-header .sidebar-toggle {
@@ -128,14 +108,6 @@
         margin: 4px 0;
         border-radius: 1px;
     }
-    .admin-header .admin-panel-title {
-        float: left;
-        line-height: 50px;
-        color: #fff;
-        padding-left: 10px;
-        font-size: 18px;
-        font-weight: 600;
-    }
     .admin-header .navbar-custom-menu { margin-left: auto; }
     .admin-header .navbar-custom-menu .nav > li > a {
         padding: 15px 12px;
@@ -151,21 +123,11 @@
     @media (max-width: 768px) {
         .admin-header .navbar { padding-left: 0; padding-right: 0; }
         .admin-header #header-logo,
-        .admin-header .admin-header-logo-fallback {
+        .admin-header .admin-header-logo-img {
             width: 140px;
             height: 56px;
             left: 8px;
             top: 100%;
-        }
-
-        .admin-header__mark {
-            width: 38px;
-            height: 38px;
-            font-size: 0.85rem;
-        }
-
-        .admin-header__name {
-            font-size: 0.95rem;
         }
         .admin-header .admin-panel-title { font-size: 15px; padding-left: 8px; }
         .admin-header .nav-visit-text { display: none; }
@@ -175,20 +137,10 @@
     }
     @media (max-width: 576px) {
         .admin-header #header-logo,
-        .admin-header .admin-header-logo-fallback {
+        .admin-header .admin-header-logo-img {
             width: 110px;
             height: 44px;
             left: 6px;
-        }
-
-        .admin-header__mark {
-            width: 32px;
-            height: 32px;
-            font-size: 0.75rem;
-        }
-
-        .admin-header__name {
-            font-size: 0.85rem;
         }
         .admin-header .admin-panel-title { font-size: 13px; padding-left: 6px; }
         .admin-header .sidebar-toggle { padding: 10px 12px; min-width: 44px; }
@@ -198,21 +150,10 @@
     }
     @media (max-width: 380px) {
         .admin-header #header-logo,
-        .admin-header .admin-header-logo-fallback {
+        .admin-header .admin-header-logo-img {
             width: 95px;
             height: 38px;
         }
-
-        .admin-header__mark {
-            width: 28px;
-            height: 28px;
-            font-size: 0.7rem;
-        }
-
-        .admin-header__name {
-            font-size: 0.78rem;
-        }
-
         .admin-header .admin-panel-title {
             font-size: 12px;
         }
@@ -222,9 +163,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         var header = document.querySelector('.admin-header');
         var toggle = document.querySelector('.sidebar-toggle');
-        var logo = document.getElementById('header-logo')
-            || document.querySelector('.admin-header-logo-fallback');
-        var logoLink = document.querySelector('.header-logo-link');
+        var logo = document.getElementById('header-logo');
 
         if (toggle && logo) {
             toggle.addEventListener('click', function() {

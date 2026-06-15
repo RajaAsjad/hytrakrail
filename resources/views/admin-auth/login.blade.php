@@ -6,9 +6,15 @@
     <div class="admin-auth-portal">
         <div class="admin-auth-card">
             <header class="admin-auth-card__header">
-                <span class="admin-auth-card__mark" aria-hidden="true">PO</span>
+                <img
+                    src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
+                    alt="Hytrak Rail Corporation"
+                    class="admin-auth-card__logo"
+                    width="220"
+                    height="56"
+                />
                 <div class="admin-auth-card__titles">
-                    <h1 class="admin-auth-card__name">Patrick Okeke</h1>
+                    <h1 class="admin-auth-card__name">Hytrak Rail</h1>
                     <p class="admin-auth-card__panel">Admin Panel</p>
                 </div>
             </header>

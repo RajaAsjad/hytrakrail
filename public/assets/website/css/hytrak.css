@@ -131,9 +131,10 @@
       flex-shrink: 0;
       line-height: 0;
     }
-    .nav-logo svg {
+    .nav-logo svg,
+    .nav-logo-img {
       display: block;
-      height: 38px;
+      height: 80px;
       width: auto;
       max-width: none;
     }

@@ -14,10 +14,11 @@
             margin: 15px auto 2.5rem;
             padding: 3.5rem 2rem;
             background: #fff;
-            border-radius: 8px;
+            border-radius: 16px;
             position: relative;
             overflow: hidden;
             isolation: isolate;
+            border: 1px solid var(--admin-border);
         }
 
         .pg-dash__banner::before {
@@ -27,6 +28,9 @@
             z-index: 0;
             animation: pgDashMesh 18s ease-in-out infinite alternate;
             pointer-events: none;
+            background:
+                radial-gradient(ellipse 80% 55% at 75% 25%, rgba(0, 200, 255, 0.12) 0%, transparent 58%),
+                radial-gradient(ellipse 55% 45% at 15% 85%, rgba(0, 31, 91, 0.06) 0%, transparent 52%);
         }
 
         @keyframes pgDashMesh {
@@ -40,12 +44,25 @@
             z-index: 1;
         }
 
+        .pg-dash__welcome-logo {
+            width: min(100%, 240px);
+            height: auto;
+            margin: 0 auto 1.25rem;
+            display: block;
+        }
+
         .pg-dash__welcome-title {
-            font-weight: 600;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
             font-size: clamp(2rem, 5vw, 3.25rem);
-            line-height: 1.1;
-            letter-spacing: -0.02em;
+            line-height: 1.05;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
             margin: 0;
+            background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             animation: welcomeFloat 3s ease-in-out infinite;
         }
 
@@ -56,10 +73,11 @@
 
         .pg-dash__welcome-subtitle {
             font-size: clamp(0.875rem, 2vw, 1rem);
-            font-weight: 500;
+            font-weight: 600;
             margin: 1rem 0 0;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
+            color: var(--admin-muted);
         }
 
         .pg-dash__grid {
@@ -70,7 +88,7 @@
 
         .pg-dash__card {
             background: #fff;
-            border-radius: 8px;
+            border-radius: 16px;
             padding: 1.75rem 1.5rem;
             text-decoration: none;
             color: inherit;
@@ -81,6 +99,7 @@
             opacity: 0;
             transform: translateY(24px);
             animation: cardFadeIn 0.55s ease forwards;
+            border: 1px solid var(--admin-border);
         }
 
         .pg-dash__card:nth-child(1) { animation-delay: 0.08s; }
@@ -96,18 +115,26 @@
             transform: translateY(-6px);
             color: inherit;
             text-decoration: none;
+            border-color: rgba(0, 200, 255, 0.35);
+            box-shadow: 0 16px 40px rgba(0, 13, 46, 0.12);
         }
 
         .pg-dash__card-icon {
             width: 56px;
             height: 56px;
-            border-radius: 8px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
             transition: transform 0.3s ease;
+            color: #fff;
+        }
+
+        .pg-dash__card-icon.brand {
+            background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%);
+            box-shadow: 0 6px 18px rgba(0, 31, 91, 0.25);
         }
 
         .pg-dash__card:hover .pg-dash__card-icon {
@@ -116,15 +143,17 @@
 
         .pg-dash__card-value {
             font-size: 2.35rem;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
             margin-bottom: 0.5rem;
+            color: var(--admin-text);
         }
 
         .pg-dash__card-label {
             font-size: 0.9375rem;
             margin-top: 0.25rem;
-            font-weight: 500;
+            font-weight: 600;
+            color: var(--admin-muted);
         }
 
         @media (max-width: 1200px) {
@@ -154,8 +183,15 @@
 
         <div class="pg-dash__banner">
             <div class="pg-dash__welcome">
-                <h1 class="pg-dash__welcome-title">Welcome,<br>Patrick Okeke</h1>
-                <p class="pg-dash__welcome-subtitle">Author site — admin desk</p>
+                <img
+                    src="{{ asset('assets/website/images/hytrak-logo-color.png') }}"
+                    alt="Hytrak Rail Corporation"
+                    class="pg-dash__welcome-logo"
+                    width="240"
+                    height="60"
+                />
+                <h1 class="pg-dash__welcome-title">Welcome to<br>Hytrak Rail</h1>
+                <p class="pg-dash__welcome-subtitle">Admin Dashboard</p>
             </div>
         </div>
 

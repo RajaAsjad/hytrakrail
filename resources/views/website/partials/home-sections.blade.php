@@ -979,8 +979,8 @@
         <article class="team-card featured reveal" style="transition-delay:0s;" aria-label="Mark Mitchell, Founder and CEO">
           <img
             class="team-card-photo"
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80&auto=format&fit=crop"
-            alt="Professional headshot portrait representing Mark Mitchell, P.E., Founder and CEO of Hytrak Rail Corporation"
+            src="{{ asset('assets/website/images/mark-mitchell.png') }}"
+            alt="Mark Mitchell, P.E., Founder and CEO of Hytrak Rail Corporation"
             loading="lazy"
           />
           <div class="team-card-body">

@@ -2,13 +2,27 @@
 <nav id="main-nav" role="navigation" aria-label="Main navigation">
     <div class="container">
         <div class="nav-inner">
+            @php
+                $headerLogo = trim($home_page_data['header_logo'] ?? '');
+            @endphp
             <a href="{{ route('index') }}" class="nav-logo" aria-label="Hytrak Rail Corporation — Home">
-                <svg width="148" height="38" viewBox="0 0 148 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Hytrak Rail Corporation Logo" role="img">
-                    <polygon points="0,19 14,4 14,12 22,12 22,6 36,19 22,32 22,26 14,26 14,34" fill="#C0392B"/>
-                    <polygon points="4,19 16,7 16,14 24,14 24,8 34,19 24,30 24,24 16,24 16,31" fill="#003087" opacity="0.7"/>
-                    <text x="44" y="26" font-family="Barlow Condensed, sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="2">HYTRAK</text>
-                    <text x="44" y="35" font-family="Inter, sans-serif" font-size="8.5" font-weight="500" fill="#8a9bb8" letter-spacing="2.5">RAIL CORPORATION</text>
-                </svg>
+                @if ($headerLogo !== '')
+                    <img
+                        src="{{ asset('public/admin/assets/images/page') }}/{{ $home_page_data['header_logo'] }}"
+                        alt="Hytrak Rail Corporation"
+                        class="nav-logo-img"
+                        width="548"
+                        height="80"
+                    />
+                @else
+                    <img
+                        src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
+                        alt="Hytrak Rail Corporation"
+                        class="nav-logo-img"
+                        width="148"
+                        height="38"
+                    />
+                @endif
             </a>
 
             <ul class="nav-links" role="list">
