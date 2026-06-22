@@ -3,15 +3,19 @@
   ============================================= -->
   <section id="hero" aria-label="Hero — Get places faster">
 
-    <!-- YouTube video background -->
+    <!-- Hero video background -->
     <div class="hero-video-wrap" aria-hidden="true">
-      <iframe
-        src="https://www.youtube.com/embed/7l1qtFoPwaA?autoplay=1&mute=1&loop=1&playlist=7l1qtFoPwaA&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1"
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
         title="Hytrak Rail System Video"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
+      >
+        <source src="{{ asset('assets/website/video/Video Curve 2024.mp4') }}" type="video/mp4">
+      </video>
     </div>
 
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -27,7 +31,7 @@
         </h1>
 
         <p class="hero-sub">
-          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger cars. Zero emissions. 50× cheaper to build than traditional high-speed rail. The future of intercity transit is here.
+          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger cars. Zero emissions. 5% cheaper to build than traditional high-speed rail. The future of intercity transit is here.
         </p>
 
         <div class="hero-actions">
@@ -57,7 +61,7 @@
             <div class="stat-label">Top Speed</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num" aria-label="50 times cheaper construction">50×</div>
+            <div class="stat-num" aria-label="5% cheaper construction">5%</div>
             <div class="stat-label">Cheaper to Build vs. HSR</div>
           </div>
           <div class="stat-item">
@@ -149,7 +153,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               </div>
               <div class="solution-item-text">
-                <h4>50× Cheaper Construction</h4>
+                <h4>5% Cheaper Construction</h4>
                 <p>Lightweight elevated towers require minimal land acquisition and dramatically reduce civil works cost per mile.</p>
               </div>
             </div>
@@ -387,7 +391,7 @@
               <div class="spec-label">Tower Span</div>
             </div>
             <div class="tech-spec-item">
-              <div class="spec-val">50×</div>
+              <div class="spec-val">5%</div>
               <div class="spec-label">Cost Savings vs. HSR</div>
             </div>
           </div>

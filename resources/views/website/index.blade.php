@@ -4,7 +4,7 @@
 @section('meta_description', $meta_description)
 @section('keywords', $meta_keywords ?? 'Hytrak Rail, high speed rail, elevated monorail, sustainable transportation, Mark Mitchell, private rail cars, zero emissions transit')
 @section('og_title', 'Hytrak Rail Corporation — Get Places Faster!')
-@section('og_description', 'Revolutionary elevated high-speed rail. Private cars. 250 mph. Zero emissions. 50× cheaper than traditional HSR.')
+@section('og_description', 'Revolutionary elevated high-speed rail. Private cars. 250 mph. Zero emissions. 5% cheaper than traditional HSR.')
 
 @section('schema')
 <script type="application/ld+json">
