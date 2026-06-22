@@ -1008,7 +1008,7 @@
         <article class="team-card reveal" style="transition-delay:0.08s;" aria-label="Engineering team member">
           <img
             class="team-card-photo"
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80&auto=format&fit=crop"
+            src="{{ asset('assets/website/images/92.jpeg') }}"
             alt="Professional portrait of a Hytrak structural engineering team member"
             loading="lazy"
           />
