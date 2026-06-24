@@ -328,7 +328,7 @@ img.existing-photo {
 }
 
 .sidebar-menu .treeview-menu>li:hover {
-    background: rgba(168, 90, 50, 0.2);
+    background: rgba(0, 200, 255, 0.12);
 }
 
 ::-webkit-scrollbar {
@@ -345,7 +345,7 @@ img.existing-photo {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #db2777 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%);
 }
 
 .seo-info {
@@ -368,8 +368,8 @@ img.existing-photo {
 .skin-blue .sidebar-menu>li:hover>a,
 .skin-blue .sidebar-menu>li.active>a {
     color: #fff;
-    background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-orange) 100%);
-    border-left-color: var(--admin-pink-deep);
+    background: linear-gradient(135deg, #001f5b 0%, #0099cc 100%);
+    border-left-color: var(--admin-pink);
 }
 
 .nav-tabs-custom>.nav-tabs>li.active {
@@ -401,19 +401,19 @@ img.existing-photo {
 }
 
 .content-header .content-header-right a {
-    background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-orange) 100%);
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%);
     border-color: transparent;
     color: #fff;
 }
 
 .form-control:focus {
-    border-color: rgba(168, 90, 50, 0.55);
-    box-shadow: 0 0 0 1px rgba(168, 90, 50, 0.12);
+    border-color: rgba(0, 200, 255, 0.55);
+    box-shadow: 0 0 0 1px rgba(0, 200, 255, 0.12);
 }
 
 .login-button {
-    background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-orange) 100%);
-    border-color: rgba(168, 90, 50, 0.45);
+    background: var(--admin-gradient);
+    border-color: rgba(0, 200, 255, 0.35);
     color: #fff;
 }
 
@@ -574,9 +574,9 @@ div.pagination {
 div.pagination a {
     padding: 5px 7px;
     margin: 2px;
-    border: 1px solid rgba(168, 90, 50, 0.45);
+    border: 1px solid rgba(0, 200, 255, 0.35);
     text-decoration: none;
-    background: linear-gradient(135deg, var(--admin-pink-deep) 0%, #ea580c 100%);
+    background: var(--admin-gradient);
     color: #fff;
     font-weight: bold;
     border-radius: 4px;
@@ -584,17 +584,17 @@ div.pagination a {
 
 div.pagination a:hover,
 div.pagination a:active {
-    border-color: rgba(168, 90, 50, 0.55);
+    border-color: rgba(0, 200, 255, 0.45);
     color: #fff;
-    background: linear-gradient(135deg, #db2777 0%, #ea580c 100%);
+    background: var(--admin-gradient-hover);
 }
 
 div.pagination span.current {
     padding: 5px 7px;
     margin: 2px;
-    border: 1px solid rgba(168, 90, 50, 0.45);
+    border: 1px solid rgba(0, 200, 255, 0.35);
     font-weight: bold;
-    background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-orange) 100%);
+    background: var(--admin-gradient);
     color: #fff;
     border-radius: 4px;
 }

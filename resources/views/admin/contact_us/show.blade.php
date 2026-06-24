@@ -6,17 +6,17 @@
 	.contact-detail-card {
 		background: #ffffff;
 		border-radius: 16px;
-		box-shadow: 0 8px 24px rgba(236, 72, 153, 0.1);
-		border: 1px solid rgba(236, 72, 153, 0.15);
+		box-shadow: 0 8px 24px rgba(0, 31, 91, 0.1);
+		border: 1px solid rgba(0, 31, 91, 0.15);
 		overflow: hidden;
 	}
 	.contact-detail-header {
-		background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-pink-deep) 50%, #ea580c 100%) !important;
+		background: linear-gradient(135deg, #001f5b 0%, #003087 55%, #0099cc 100%) !important;
 		color: #fff;
 		padding: 18px 30px;
 		border-radius: 16px 16px 0 0;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-		box-shadow: 0 4px 16px rgba(236, 72, 153, 0.25);
+		border-bottom: 2px solid rgba(0, 200, 255, 0.25);
+		box-shadow: 0 4px 16px rgba(0, 31, 91, 0.25);
 		text-align: center;
 	}
 	.contact-detail-header h1 {
@@ -30,34 +30,34 @@
 	}
 	.contact-detail-body {
 		padding: 30px 40px;
-		background: #f5f3f0;
+		background: #eef4fc;
 	}
 	.contact-detail-table {
 		background: #fff;
 		border-radius: 12px;
-		border: 1px solid rgba(236, 72, 153, 0.12);
+		border: 1px solid rgba(0, 31, 91, 0.12);
 		overflow: hidden;
-		box-shadow: 0 2px 8px rgba(236, 72, 153, 0.06);
+		box-shadow: 0 2px 8px rgba(0, 31, 91, 0.06);
 	}
 	.contact-detail-table table { margin: 0; }
 	.contact-detail-table th {
 		width: 180px;
-		background: linear-gradient(135deg, rgba(253, 242, 248, 0.9), rgba(255, 247, 237, 0.95));
-		color: #1a1a1a;
+		background: linear-gradient(135deg, #e8f4fc 0%, #eef4fc 100%);
+		color: #001f5b;
 		font-weight: 600;
 		font-size: 14px;
 		padding: 14px 16px;
-		border: 1px solid rgba(236, 72, 153, 0.12);
+		border: 1px solid rgba(0, 31, 91, 0.12);
 	}
 	.contact-detail-table td {
 		padding: 14px 16px;
 		font-size: 14px;
 		color: #374151;
-		border: 1px solid rgba(236, 72, 153, 0.1);
+		border: 1px solid rgba(0, 31, 91, 0.1);
 	}
-	.contact-detail-table tr:hover td { background: rgba(236, 72, 153, 0.05); }
+	.contact-detail-table tr:hover td { background: rgba(0, 200, 255, 0.05); }
 	.btn-view-all {
-		background: var(--admin-pink) !important;
+		background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
 		color: #fff !important;
 		border: none;
 		padding: 10px 24px;
@@ -67,12 +67,12 @@
 		display: inline-block;
 		transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 		margin-bottom: 20px;
-		box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+		box-shadow: 0 4px 14px rgba(0, 31, 91, 0.35);
 	}
 	.btn-view-all:hover {
-		background: #f472b6 !important;
+		background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
 		color: #fff !important;
-		box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+		box-shadow: 0 6px 20px rgba(0, 200, 255, 0.35);
 		transform: translateY(-1px);
 	}
 </style>

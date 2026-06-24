@@ -7,17 +7,17 @@
 	.contact-card {
 		background: #ffffff;
 		border-radius: 16px;
-		box-shadow: 0 8px 24px rgba(236, 72, 153, 0.1);
-		border: 1px solid rgba(236, 72, 153, 0.15);
+		box-shadow: 0 8px 24px rgba(0, 31, 91, 0.1);
+		border: 1px solid rgba(0, 31, 91, 0.15);
 		overflow: hidden;
 	}
 	.contact-header {
-		background: linear-gradient(135deg, var(--admin-pink) 0%, var(--admin-pink-deep) 50%, var(--admin-orange) 100%) !important;
+		background: linear-gradient(135deg, #001f5b 0%, #003087 55%, #0099cc 100%) !important;
 		color: #fff;
 		padding: 18px 30px;
 		border-radius: 16px 16px 0 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-		box-shadow: 0 4px 16px rgba(236, 72, 153, 0.25);
+		box-shadow: 0 4px 16px rgba(0, 31, 91, 0.25);
 		text-align: center;
 	}
 	.contact-header h1 {
@@ -34,22 +34,22 @@
 		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 		gap: 20px;
 		padding: 25px 30px 0;
-		background: #f5f3f0;
+		background: #eef4fc;
 		margin-bottom: 20px;
 	}
 	.contact-stats .stat-box {
 		background: #fff;
 		padding: 18px;
 		border-radius: 12px;
-		box-shadow: 0 2px 8px rgba(236, 72, 153, 0.08);
-		border: 1px solid rgba(236, 72, 153, 0.12);
+		box-shadow: 0 2px 8px rgba(0, 31, 91, 0.08);
+		border: 1px solid rgba(0, 31, 91, 0.12);
 		text-align: center;
 		margin-bottom: 20px;
 	}
 	.contact-stats .stat-box .num {
 		font-size: 22px;
 		font-weight: 700;
-		background: linear-gradient(135deg, var(--admin-pink), var(--admin-orange));
+		background: linear-gradient(135deg, #001f5b, #00c8ff);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -58,12 +58,12 @@
 	.contact-search {
 		background: #fafaf9;
 		padding: 20px 30px;
-		border: 1px solid rgba(236, 72, 153, 0.1);
+		border: 1px solid rgba(0, 31, 91, 0.1);
 		margin: 0 30px 20px;
 		border-radius: 12px;
 	}
 	.contact-search .form-control {
-		border: 1px solid rgba(236, 72, 153, 0.2);
+		border: 1px solid rgba(0, 31, 91, 0.2);
 		border-radius: 10px;
 		font-size: 14px;
 		transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -71,23 +71,23 @@
 	}
 	.contact-search .form-control:focus {
 		border-color: var(--admin-pink);
-		box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.18);
+		box-shadow: 0 0 0 3px rgba(0, 31, 91, 0.18);
 		outline: none;
 	}
 	.contact-search .btn-filter {
-		background: var(--admin-pink) !important;
+		background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
 		color: #fff !important;
 		border: none;
 		padding: 10px 24px;
 		border-radius: 9999px;
 		font-weight: 600;
 		transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
-		box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+		box-shadow: 0 4px 14px rgba(0, 31, 91, 0.35);
 	}
 	.contact-search .btn-filter:hover {
-		background: #f472b6 !important;
+		background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
 		color: #fff !important;
-		box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+		box-shadow: 0 6px 20px rgba(0, 200, 255, 0.35);
 		transform: translateY(-1px);
 	}
 	.contact-search .btn-clear {
@@ -102,22 +102,22 @@
 		transition: background 0.2s ease;
 	}
 	.contact-search .btn-clear:hover { background: #4b5563; color: #fff !important; }
-	.contact-body { padding: 15px 30px 25px; background: #f5f3f0; }
+	.contact-body { padding: 15px 30px 25px; background: #eef4fc; }
 	.contact-list-container .table-wrap {
 		background: #ffffff;
 		border-radius: 12px;
-		border: 1px solid rgba(236, 72, 153, 0.12);
+		border: 1px solid rgba(0, 31, 91, 0.12);
 		overflow: hidden;
-		box-shadow: 0 2px 8px rgba(236, 72, 153, 0.06);
+		box-shadow: 0 2px 8px rgba(0, 31, 91, 0.06);
 	}
 	.contact-list-container .contact-list-table { margin: 0; }
 	.contact-list-container .contact-list-table thead tr {
-		background: linear-gradient(135deg, #fdf2f8 0%, #fff7ed 100%) !important;
-		border-bottom: 1px solid rgba(236, 72, 153, 0.2);
+		background: linear-gradient(135deg, #001f5b 0%, #003087 100%) !important;
+		border-bottom: 1px solid rgba(0, 200, 255, 0.25);
 	}
 	.contact-list-container .contact-list-table thead th {
 		font-weight: 600;
-		color: #1a1a1a;
+		color: #fff;
 		font-size: 13px;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
@@ -126,14 +126,14 @@
 	}
 	.contact-list-container .contact-list-table tbody tr { transition: background 0.2s ease; }
 	.contact-list-container .contact-list-table tbody tr:hover {
-		background: rgba(236, 72, 153, 0.06);
+		background: rgba(0, 31, 91, 0.06);
 	}
 	.contact-list-container .contact-list-table tbody td {
 		padding: 12px;
 		vertical-align: middle;
 		font-size: 14px;
 		color: #374151;
-		border-color: rgba(236, 72, 153, 0.1);
+		border-color: rgba(0, 31, 91, 0.1);
 	}
 	.contact-action-btns {
 		display: flex;
@@ -143,7 +143,7 @@
 		align-items: center;
 	}
 	.contact-list-container .btn-show {
-		background: var(--admin-pink) !important;
+		background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
 		border: none;
 		color: #fff !important;
 		font-weight: 600;
@@ -154,12 +154,12 @@
 		text-decoration: none !important;
 		display: inline-block;
 		white-space: nowrap;
-		box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3);
+		box-shadow: 0 2px 8px rgba(0, 31, 91, 0.3);
 	}
 	.contact-list-container .btn-show:hover {
-		background: #f472b6 !important;
+		background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
 		color: #fff !important;
-		box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+		box-shadow: 0 4px 12px rgba(0, 200, 255, 0.35);
 		transform: translateY(-1px);
 	}
 	.contact-list-container .btn-delete {
@@ -177,7 +177,7 @@
 	.contact-list-container .pagination-wrap {
 		padding: 16px;
 		background: #fafaf9;
-		border-top: 1px solid rgba(236, 72, 153, 0.12);
+		border-top: 1px solid rgba(0, 31, 91, 0.12);
 		display: flex;
 		flex-direction: column;
 		gap: 8px;

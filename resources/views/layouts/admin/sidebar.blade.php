@@ -66,42 +66,8 @@
                 </li>
             @endcan --}}
 
-             
-            <li class="treeview mt-2 {{ (request()->is('video') || request()->is('video/create') || request()->is('video/*/edit') || request()->is('audio') || request()->is('audio/create') || request()->is('audio/*/edit') || request()->is('audio/*') || request()->is('photogallery') || request()->is('photogallery/*') ) ? 'active' : '' }}" style="height: auto;">
-                <a href="#" class="{{ (request()->is('video') || request()->is('video/create') || request()->is('video/*/edit') || request()->is('audio') || request()->is('audio/create') || request()->is('audio/*/edit') || request()->is('audio/*') || request()->is('photogallery') || request()->is('photogallery/*') ) ? 'active' : '' }}">
-                    <i class="fa fa-files-o"></i>
-                    <span>Highlight Videos</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-
-                <ul class="treeview-menu" style="display: {{ (request()->is('video') || request()->is('video/create') || request()->is('video/*/edit') || request()->is('audio') || request()->is('audio/create') || request()->is('audio/*/edit') || request()->is('audio/*') || request()->is('photogallery') || request()->is('photogallery/*') ) ? 'block' : 'none' }};">
-
-                    @can('video-list')
-                    <li class="treeview mt-2">
-                        <a href="{{ route('video.index') }}" class="{{ request()->is('video') || request()->is('video/create') || request()->is('video/*/edit') ? 'active' : '' }}">
-                            <i class="fa fa-sitemap"></i> <span>Videos</span>
-                        </a>
-                    </li>
-                    @endcan
-
-                   {{--  @can('audio-list')
-                    <li class="treeview mt-2">
-                        <a href="{{ route('audio.index') }}" class="{{ request()->is('audio') || request()->is('audio/create') || request()->is('audio/*/edit') || request()->is('audio/*') ? 'active' : '' }}">
-                            <i class="fa fa-code-fork"></i> <span>Audio</span>
-                        </a>
-                    </li>
-                    @endcan --}}
-                    {{-- @can('photogallery-list')
-                    <li class="treeview mt-2">
-                        <a href="{{ route('photogallery.index') }}" class="{{ request()->is('photogallery') || request()->is('photogallery/*') ? 'active' : '' }}">
-                            <i class="fa fa-camera"></i> <span>Photo Gallery</span>
-                        </a>
-                    </li>
-                    @endcan --}}
-                </ul>
-            </li>
+            
+                
             @can('contactus-list')
                 <li class="treeview mt-2">
                     <a href="{{ route('contactus.index') }}" class="{{ request()->is('contactus') || request()->is('contactus/create') || request()->is('contactus/*/edit') || request()->is('contactus/*') ? 'active' : '' }}">

@@ -3,16 +3,20 @@
 @section('title', 'Admin login')
 
 @section('content')
+    <canvas id="admin-auth-canvas" class="admin-auth-canvas" aria-hidden="true"></canvas>
     <div class="admin-auth-portal">
         <div class="admin-auth-card">
             <header class="admin-auth-card__header">
-                <img
+                {{-- <img
                     src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
                     alt="Hytrak Rail Corporation"
                     class="admin-auth-card__logo"
                     width="220"
                     height="56"
-                />
+                /> --}}
+                <img id="header-logo" class="admin-header-logo-img"
+                src="{{ asset('public/admin/assets/images/page/' . $adminLogo) }}"
+                alt="Hytrak Rail Corporation">
                 <div class="admin-auth-card__titles">
                     <h1 class="admin-auth-card__name">Hytrak Rail</h1>
                     <p class="admin-auth-card__panel">Admin Panel</p>
@@ -57,3 +61,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('admin/assets/js/admin-auth-canvas.js') }}" defer></script>
+@endpush

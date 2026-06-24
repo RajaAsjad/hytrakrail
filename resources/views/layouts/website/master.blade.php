@@ -17,14 +17,8 @@
         <meta property="og:url" content="{{ url('/') }}">
     @endif
 
-    @php
-        $fav = trim($home_page_data['header_favicon'] ?? '');
-    @endphp
-    @if ($fav !== '')
-        <link rel="icon" href="{{ asset('admin/assets/images/page/' . $fav) }}" type="image/png">
-    @else
-        <link rel="icon" href="{{ asset('assets/website/favicon.svg') }}" type="image/svg+xml">
-    @endif
+    
+   <link rel="icon" href="{{asset('/admin/assets/images/page') }}/{{ $home_page_data['header_favicon'] }}" type="image/png" sizes="32x32">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

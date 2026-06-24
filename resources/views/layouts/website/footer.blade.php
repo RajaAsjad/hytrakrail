@@ -8,8 +8,8 @@
                         src="{{ asset('public/admin/assets/images/page') }}/{{ $home_page_data['header_logo'] }}"
                         alt="Hytrak Rail Corporation"
                         class="footer-logo-img"
-                        width="348"
-                        height="100"
+                        width="350"
+                        height="55"
                     />
                 </a>
                 <p class="footer-tagline">Private cars. 250 mph. Zero emissions. Elevated high-speed rail — built and proven in Lake County, California.</p>

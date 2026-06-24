@@ -7,29 +7,9 @@
     <title>@yield('title')</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" id="token" content="{{ csrf_token() }}" />
-    @php
-        $adminFav = trim($home_page_data['header_favicon'] ?? '');
-        $adminFavExt = $adminFav !== '' ? strtolower(pathinfo($adminFav, PATHINFO_EXTENSION)) : '';
-        $adminFavMime = match ($adminFavExt) {
-            'png' => 'image/png',
-            'jpg', 'jpeg' => 'image/jpeg',
-            'gif' => 'image/gif',
-            'ico' => 'image/x-icon',
-            'svg' => 'image/svg+xml',
-            'webp' => 'image/webp',
-            default => '',
-        };
-    @endphp
-    @if ($adminFav !== '')
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="{{ asset('admin/assets/images/page/' . $adminFav) }}">
-        <link rel="icon" href="{{ asset('admin/assets/images/page/' . $adminFav) }}"
-            @if ($adminFavMime !== '') type="{{ $adminFavMime }}" @endif sizes="32x32">
-    @else
-        <link rel="icon" href="{{ asset('assets/website/favicon.svg') }}" type="image/svg+xml"
-            sizes="any">
-        <link rel="apple-touch-icon" href="{{ asset('assets/website/favicon.svg') }}">
-    @endif
+     
+    <link rel="icon" href="{{asset('public/admin/assets/images/page') }}/{{ $home_page_data['header_favicon'] }}"
+    type="image/png" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -63,7 +43,7 @@
         .skin-blue .main-sidebar,
         .content-header .content-header-right a,
         .content .form-horizontal .btn-success {
-             background-color: #000d2e !important;
+            background-color: var(--admin-shell) !important;
             /* background-image: url('{{ asset("assets/website/images/login.png") }}');
             background-size: cover;
             background-position: center; */
@@ -170,7 +150,7 @@
         .btn-active {
             color: #fff !important;
             background: var(--admin-gradient) !important;
-            border-color: rgba(168, 90, 50, 0.45) !important;
+            border-color: rgba(0, 200, 255, 0.35) !important;
             font-weight: 600;
             transition: all 0.25s ease-in-out;
         }
@@ -178,8 +158,8 @@
         .btn-active:hover {
             color: #fff !important;
             background: var(--admin-gradient-hover) !important;
-            border-color: rgba(168, 90, 50, 0.55) !important;
-            box-shadow: 0 4px 14px rgba(168, 90, 50, 0.3);
+            border-color: rgba(0, 200, 255, 0.45) !important;
+            box-shadow: 0 4px 14px rgba(0, 200, 255, 0.25);
         }
 
         .info-box {
@@ -228,7 +208,7 @@
         }
 
         .skin-blue .sidebar-menu>li:hover>a {
-            background: rgba(168, 90, 50, 0.18) !important;
+            background: rgba(0, 200, 255, 0.15) !important;
         }
 
         .skin-blue .sidebar-menu>li>.treeview-menu {
@@ -252,21 +232,21 @@
             z-index: 3;
             color: #fff !important;
             background: var(--admin-gradient) !important;
-            border-color: rgba(168, 90, 50, 0.45);
+            border-color: rgba(0, 200, 255, 0.35);
         }
 
         .pagination>.active>span:hover {
             z-index: 3;
             color: #fff !important;
             background: var(--admin-gradient-hover) !important;
-            border-color: rgba(219, 39, 119, 0.55);
+            border-color: rgba(0, 200, 255, 0.45);
         }
 
         .pagination>li>a:hover {
             z-index: 2;
             color: #fff !important;
-            background: linear-gradient(135deg, var(--admin-pink-deep) 0%, #ea580c 100%);
-            border-color: rgba(168, 90, 50, 0.4);
+            background: var(--admin-gradient-hover) !important;
+            border-color: rgba(0, 200, 255, 0.35);
         }
 
         .pagination>li>a {
@@ -289,11 +269,12 @@
         .modal-header {
             padding: 15px;
             background: linear-gradient(180deg, #fff 0%, var(--admin-cream) 100%);
-            border-bottom: 2px solid rgba(168, 90, 50, 0.35);
+            border-bottom: 2px solid rgba(0, 200, 255, 0.25);
         }
     </style>
 
     @stack('css')
+    <link rel="stylesheet" href="{{ asset('admin/assets/css/hytrak-admin-modules.css') }}">
 </head>
 
 <body class="hold-transition fixed skin-blue sidebar-mini">

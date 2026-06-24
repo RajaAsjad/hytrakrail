@@ -3,7 +3,7 @@
 @section('content')
 @push('css')
 <style>
-	.page-admin { --pg-pink: #ec4899; --pg-pink-deep: #be185d; --pg-orange: #fb923c; --pg-cream: #f5f3f0; --pg-text: #1c1917; }
+	.page-admin { --pg-pink: #00c8ff; --pg-pink-deep: #0099cc; --pg-orange: #001f5b; --pg-cream: #eef4fc; --pg-text: #001f5b; }
 	.page-card {
 		background: #fff;
 		border-radius: 12px;

@@ -8,7 +8,8 @@
 }
 
 .skin-blue .main-sidebar {
-    background: linear-gradient(180deg, #001f5b 0%, #000d2e 100%) !important;
+   /*  background: linear-gradient(180deg, #001f5b 0%, #000d2e 100%) !important; */
+   background-color: var(--admin-shell) !important;
 }
 
 .skin-blue .sidebar-menu > li.header {

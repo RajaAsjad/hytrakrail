@@ -13,7 +13,7 @@
             width: 100%;
             margin: 15px auto 2.5rem;
             padding: 3.5rem 2rem;
-            background: #fff;
+            background: #001f5b;
             border-radius: 16px;
             position: relative;
             overflow: hidden;
@@ -45,7 +45,7 @@
         }
 
         .pg-dash__welcome-logo {
-            width: min(100%, 240px);
+            width: min(100%, 50%);
             height: auto;
             margin: 0 auto 1.25rem;
             display: block;
@@ -54,7 +54,7 @@
         .pg-dash__welcome-title {
             font-family: 'Barlow Condensed', sans-serif;
             font-weight: 800;
-            font-size: clamp(2rem, 5vw, 3.25rem);
+            font-size: clamp(2rem, 5vw, 5rem);
             line-height: 1.05;
             letter-spacing: 0.02em;
             text-transform: uppercase;
@@ -179,17 +179,17 @@
         @php
             $contactUsIndex = Route::has('contactus.index') ? route('contactus.index') : '#';
             $videoIndex = Route::has('video.index') ? route('video.index') : '#';
+            $adminLogo = trim($home_page_data['header_logo'] ?? '');
         @endphp
 
         <div class="pg-dash__banner">
             <div class="pg-dash__welcome">
-                <img
-                    src="{{ asset('assets/website/images/hytrak-logo-color.png') }}"
-                    alt="Hytrak Rail Corporation"
-                    class="pg-dash__welcome-logo"
-                    width="240"
-                    height="60"
-                />
+                 
+                <img class="pg-dash__welcome-logo"
+                width="240"
+                height="60"
+                src="{{ asset('public/admin/assets/images/page/' . $adminLogo) }}"
+                alt="Hytrak Rail Corporation">
                 <h1 class="pg-dash__welcome-title">Welcome to<br>Hytrak Rail</h1>
                 <p class="pg-dash__welcome-subtitle">Admin Dashboard</p>
             </div>

@@ -1,0 +1,355 @@
+/* Hytrak Rail — admin module pages (pages, contacts, settings, etc.) */
+
+.page-admin,
+.video-admin,
+.content-header.page-admin {
+    --pg-pink: #00c8ff !important;
+    --pg-pink-deep: #0099cc !important;
+    --pg-orange: #001f5b !important;
+    --pg-cream: #eef4fc !important;
+    --pg-text: #001f5b !important;
+    --v-pink: #00c8ff !important;
+    --v-pink-deep: #0099cc !important;
+    --v-orange: #001f5b !important;
+    --v-cream: #eef4fc !important;
+    --v-text: #001f5b !important;
+}
+
+/* Cards */
+.page-card,
+.contact-card,
+.video-card,
+.page-admin .page-card {
+    border: 1px solid rgba(0, 31, 91, 0.12) !important;
+    box-shadow: 0 4px 24px rgba(0, 13, 46, 0.08) !important;
+}
+
+/* Page / section headers */
+.page-header,
+.contact-header,
+.video-header,
+.page-admin .page-header,
+.header-settings-header,
+.home-about-header,
+.video-form-header {
+    background: linear-gradient(135deg, #001f5b 0%, #003087 55%, #0099cc 100%) !important;
+    border-bottom: 2px solid rgba(0, 200, 255, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(0, 31, 91, 0.25) !important;
+    color: #fff !important;
+}
+
+.page-header h1,
+.contact-header h1,
+.video-header h1 {
+    color: #fff !important;
+}
+
+/* Stats areas */
+.page-stats,
+.contact-stats,
+.page-body,
+.contact-body,
+.page-admin .page-stats,
+.page-admin .page-body {
+    background: var(--admin-cream) !important;
+}
+
+.page-stats .stat-box,
+.contact-stats .stat-box {
+    border: 1px solid rgba(0, 31, 91, 0.1) !important;
+    box-shadow: 0 2px 12px rgba(0, 13, 46, 0.06) !important;
+}
+
+.page-stats .stat-box .num,
+.contact-stats .stat-box .num {
+    color: var(--admin-text) !important;
+    background: linear-gradient(135deg, #001f5b, #00c8ff) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Search / filter bars */
+.page-search,
+.contact-search,
+.page-admin .page-search {
+    background: #f4f8ff !important;
+    border: 1px solid rgba(0, 31, 91, 0.1) !important;
+}
+
+.page-search .form-control:focus,
+.contact-search .form-control:focus {
+    border-color: rgba(0, 200, 255, 0.55) !important;
+    box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.12) !important;
+}
+
+/* Primary action buttons */
+.page-search .btn-filter,
+.page-stats .btn-add-page,
+.page-list-container .btn-edit,
+.contact-search .btn-filter,
+.video-admin .btn-filter,
+.video-admin .btn-add,
+.page-admin .btn-filter,
+.page-admin .btn-primary-custom,
+.header-settings-body .btn-save,
+.home-about-body .btn-save,
+.video-form-body .btn-submit {
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.page-search .btn-filter:hover,
+.page-stats .btn-add-page:hover,
+.page-list-container .btn-edit:hover,
+.contact-search .btn-filter:hover,
+.video-admin .btn-filter:hover,
+.page-admin .btn-filter:hover {
+    background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 14px rgba(0, 200, 255, 0.3) !important;
+}
+
+/* Table headers */
+.page-list-container .page-list-table thead tr,
+.contact-list-container .contact-list-table thead tr,
+.video-list-container table thead tr,
+.page-admin table thead tr {
+    background: linear-gradient(135deg, #001f5b 0%, #002a7a 50%, #0099cc 100%) !important;
+    border-bottom: 2px solid rgba(0, 200, 255, 0.3) !important;
+}
+
+.page-list-container .page-list-table thead th,
+.contact-list-container .contact-list-table thead th {
+    color: #fff !important;
+}
+
+.contact-list-container .contact-list-table thead tr {
+    background: linear-gradient(135deg, #001f5b 0%, #002a7a 50%, #0099cc 100%) !important;
+}
+
+.contact-list-container .contact-list-table thead th {
+    color: #fff !important;
+}
+
+/* Table rows */
+.page-list-container .page-list-table tbody tr:hover,
+.contact-list-container .contact-list-table tbody tr:hover {
+    background: rgba(0, 200, 255, 0.06) !important;
+}
+
+.page-list-container .table-wrap,
+.contact-list-container .table-wrap {
+    border: 1px solid rgba(0, 31, 91, 0.1) !important;
+    box-shadow: 0 2px 12px rgba(0, 13, 46, 0.06) !important;
+}
+
+/* Secondary buttons */
+.page-list-container .btn-setting {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    border: 1px solid #475569 !important;
+}
+
+.page-list-container .btn-setting:hover {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+}
+
+/* Settings / form pages */
+.header-settings-alert,
+.home-about-alert,
+.callout-success-custom {
+    background: #ecfdf5 !important;
+    border: 1px solid #6ee7b7 !important;
+    color: #14532d !important;
+}
+
+.page-admin .form-section-title,
+.header-settings-body h4,
+.home-about-body h4 {
+    color: var(--admin-text) !important;
+}
+
+/* Video admin overrides */
+.video-admin .video-card-header,
+.video-admin .stat-pill {
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
+}
+
+/* =============================================
+   Settings pages (header, home-about, etc.)
+============================================= */
+.header-settings-container,
+.home-about-container {
+    border: 1px solid rgba(0, 31, 91, 0.12) !important;
+    box-shadow: 0 4px 24px rgba(0, 13, 46, 0.08) !important;
+}
+
+.header-settings-body,
+.home-about-body {
+    background: var(--admin-cream) !important;
+}
+
+.section-banner {
+    background: linear-gradient(135deg, #001f5b 0%, #003087 55%, #0099cc 100%) !important;
+    border-bottom: 2px solid rgba(0, 200, 255, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(0, 31, 91, 0.22) !important;
+}
+
+.section-banner h3 {
+    color: #fff !important;
+}
+
+.section-banner .btn {
+    color: #001f5b !important;
+    border-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.section-banner .btn:hover {
+    background: #001f5b !important;
+    color: #fff !important;
+    border-color: #001f5b !important;
+}
+
+.section-heading {
+    background: linear-gradient(90deg, #e8f4fc 0%, #eef4fc 100%) !important;
+    border: 1px solid rgba(0, 31, 91, 0.12) !important;
+    box-shadow: 0 2px 8px rgba(0, 13, 46, 0.05) !important;
+}
+
+.section-heading h4,
+.section-heading h4 i {
+    color: #001f5b !important;
+}
+
+.section-block,
+.action-section,
+.header-settings-container .section-block,
+.home-about-container .section-block {
+    border-color: rgba(0, 31, 91, 0.1) !important;
+}
+
+.header-settings-container .form-control:focus,
+.home-about-container .form-control:focus {
+    border-color: rgba(0, 200, 255, 0.55) !important;
+    box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.12) !important;
+}
+
+.existing-photo,
+.image-preview-container {
+    border-color: rgba(0, 31, 91, 0.15) !important;
+    box-shadow: 0 2px 10px rgba(0, 13, 46, 0.08) !important;
+}
+
+.image-preview-container {
+    border-color: rgba(0, 200, 255, 0.25) !important;
+}
+
+.btn-update,
+#btn-add-bullet:hover {
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 16px rgba(0, 31, 91, 0.25) !important;
+}
+
+.btn-update:hover {
+    background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
+    box-shadow: 0 6px 22px rgba(0, 200, 255, 0.3) !important;
+}
+
+#btn-add-bullet {
+    background: #001f5b !important;
+    color: #fff !important;
+    border-color: rgba(0, 200, 255, 0.35) !important;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
+    box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.2) !important;
+}
+
+.toggle-switch input:focus + .toggle-slider,
+.toggle-switch:hover .toggle-slider {
+    box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.12) !important;
+}
+
+.toggle-status.inactive {
+    background: #e8f4fc !important;
+    color: #0099cc !important;
+}
+
+.settings-section {
+    border: 1px solid rgba(0, 31, 91, 0.12) !important;
+    box-shadow: 0 2px 10px rgba(0, 13, 46, 0.05) !important;
+}
+
+/* =============================================
+   Contact list & detail pages
+============================================= */
+.contact-card,
+.contact-detail-card {
+    border: 1px solid rgba(0, 31, 91, 0.12) !important;
+    box-shadow: 0 8px 24px rgba(0, 13, 46, 0.08) !important;
+}
+
+.contact-header,
+.contact-detail-header {
+    background: linear-gradient(135deg, #001f5b 0%, #003087 55%, #0099cc 100%) !important;
+    border-bottom: 2px solid rgba(0, 200, 255, 0.25) !important;
+    box-shadow: 0 4px 16px rgba(0, 31, 91, 0.22) !important;
+    color: #fff !important;
+}
+
+.contact-header h1,
+.contact-detail-header h1 {
+    color: #fff !important;
+}
+
+.contact-detail-body {
+    background: var(--admin-cream) !important;
+}
+
+.contact-detail-table {
+    border: 1px solid rgba(0, 31, 91, 0.1) !important;
+    box-shadow: 0 2px 8px rgba(0, 13, 46, 0.06) !important;
+}
+
+.contact-detail-table th {
+    background: linear-gradient(135deg, #e8f4fc 0%, #eef4fc 100%) !important;
+    color: #001f5b !important;
+    border-color: rgba(0, 31, 91, 0.1) !important;
+}
+
+.contact-detail-table td {
+    border-color: rgba(0, 31, 91, 0.08) !important;
+}
+
+.contact-detail-table tr:hover td {
+    background: rgba(0, 200, 255, 0.05) !important;
+}
+
+.btn-view-all,
+.contact-list-container .btn-show {
+    background: linear-gradient(135deg, #001f5b 0%, #00c8ff 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(0, 31, 91, 0.2) !important;
+}
+
+.btn-view-all:hover,
+.contact-list-container .btn-show:hover {
+    background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 6px 20px rgba(0, 200, 255, 0.3) !important;
+}
+
+.contact-list-container .pagination-wrap {
+    background: #f4f8ff !important;
+    border-top-color: rgba(0, 31, 91, 0.1) !important;
+}
+
+.contact-search .btn-filter:hover {
+    background: linear-gradient(135deg, #0099cc 0%, #33d4ff 100%) !important;
+}
+
