@@ -7,16 +7,29 @@
     <div class="admin-auth-portal">
         <div class="admin-auth-card">
             <header class="admin-auth-card__header">
-                {{-- <img
-                    src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
-                    alt="Hytrak Rail Corporation"
-                    class="admin-auth-card__logo"
+                
+                @php
+                $headerLogo = trim($home_page_data['header_logo'] ?? '');
+                @endphp
+                <a href="{{ route('index') }}" class="admin-auth-card__logo" aria-label="Hytrak Rail Corporation — Home">
+                @if ($headerLogo !== '')
+                    <img
+                        src="{{ asset('public/admin/assets/images/page') }}/{{ $home_page_data['header_logo'] }}"
+                        alt="Hytrak Rail Corporation"
+                        class="admin-auth-card__logo"
                     width="220"
                     height="56"
-                /> --}}
-                <img id="header-logo" class="admin-header-logo-img"
-                src="{{ asset('public/admin/assets/images/page/' . $adminLogo) }}"
-                alt="Hytrak Rail Corporation">
+                    />
+                @else
+                    <img
+                        src="{{ asset('assets/website/images/hytrak-logo-white.png') }}"
+                        alt="Hytrak Rail Corporation"
+                        class="admin-auth-card__logo"
+                        width="148"
+                        height="38"
+                    />
+                @endif
+            </a>
                 <div class="admin-auth-card__titles">
                     <h1 class="admin-auth-card__name">Hytrak Rail</h1>
                     <p class="admin-auth-card__panel">Admin Panel</p>
