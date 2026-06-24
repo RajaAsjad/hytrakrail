@@ -14,10 +14,15 @@ class WebController extends Controller
     public function Index()
     {
         $page_title = 'Hytrak Rail Corporation — Get Places Faster!';
-        $meta_description = 'Hytrak Rail is a revolutionary inverted monorail elevated high-speed rail system. Private 4-passenger cars, 250 mph, zero emissions, 50x cheaper than traditional HSR. Point-to-point city-to-city travel, reimagined.';
+        $meta_description = 'Hytrak Rail is a revolutionary inverted monorail elevated high-speed rail system. Private 4-passenger pods, 250 mph, zero emissions, built for roughly 5% of the cost of conventional rail projects. Point-to-point city-to-city travel, reimagined.';
         $meta_keywords = 'Hytrak Rail, high speed rail, elevated monorail, sustainable transportation, Mark Mitchell, private rail cars, zero emissions transit';
 
         return view('website.index', compact('page_title', 'meta_description', 'meta_keywords'));
+    }
+
+    public function Sustainability()
+    {
+        return view('website.sustainability');
     }
 
     public function About()

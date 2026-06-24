@@ -1216,6 +1216,11 @@
       object-fit: cover;
       transition: transform 0.5s var(--ease-smooth);
     }
+    .proto-gallery-item img[src$=".svg"] {
+      object-fit: contain;
+      background: #001228;
+      padding: 8px;
+    }
     .proto-gallery-item:hover img { transform: scale(1.05); }
     .proto-gallery-item:first-child {
       grid-column: span 2;
@@ -2105,4 +2110,303 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
+    /* Private pod media rotator */
+    #pod-experience {
+      background: linear-gradient(180deg, var(--navy-deep) 0%, #020b1e 100%);
+    }
+    .pod-experience__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .media-rotator__viewport {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 16 / 10;
+      background: #00081e;
+    }
+    .media-rotator__slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+    .media-rotator__slide.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 1;
+    }
+    .media-rotator__video,
+    .media-rotator__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .media-rotator__image--blueprint {
+      object-fit: contain;
+      background: #001228;
+      padding: 12px;
+    }
+    .media-rotator__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 14px 18px;
+      background: linear-gradient(transparent, rgba(0, 8, 30, 0.9));
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--off-white);
+    }
+    .media-rotator__controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .media-rotator__tab {
+      flex: 1;
+      min-width: 100px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--dark-card);
+      color: var(--gray-text);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .media-rotator__tab.is-active,
+    .media-rotator__tab:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+      background: rgba(0, 200, 255, 0.08);
+    }
+    .media-rotator__auto {
+      margin-top: 10px;
+      background: none;
+      border: none;
+      color: var(--gray-text);
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 0;
+    }
+    .media-rotator__auto[aria-pressed="true"] { color: var(--cyan); }
+
+    @media (max-width: 900px) {
+      .pod-experience__grid { grid-template-columns: 1fr; gap: 36px; }
+    }
+
+    /* Siemens spotlight */
+    .siemens-spotlight {
+      background: linear-gradient(135deg, #001240 0%, #000d2e 60%, #001a4a 100%);
+    }
+    .siemens-spotlight__card {
+      border: 1px solid rgba(0, 200, 255, 0.25);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(0, 20, 60, 0.4);
+      box-shadow: 0 12px 48px rgba(0, 31, 91, 0.3);
+    }
+    .siemens-spotlight__visual {
+      padding: 32px 32px 0;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(0, 153, 153, 0.1) 0%, transparent 100%);
+    }
+    .siemens-spotlight__banner {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    .siemens-spotlight__body {
+      padding: 36px 40px 44px;
+    }
+    .siemens-spotlight__list {
+      list-style: none;
+      margin: 24px 0 32px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+    }
+    .siemens-spotlight__list li {
+      font-size: 0.9rem;
+      color: var(--off-white);
+      padding-left: 22px;
+      position: relative;
+    }
+    .siemens-spotlight__list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      background: var(--cyan);
+      border-radius: 50%;
+    }
+    .siemens-spotlight__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    @media (max-width: 600px) {
+      .siemens-spotlight__list { grid-template-columns: 1fr; }
+      .siemens-spotlight__body { padding: 28px 24px 36px; }
+    }
+
+    /* Benefits key list (larger) */
+    .benefits-key-list {
+      list-style: none;
+      margin: 32px 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .benefits-key-list li {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      font-weight: 500;
+      color: var(--off-white);
+      padding-left: 28px;
+      position: relative;
+      line-height: 1.45;
+    }
+    .benefits-key-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 10px;
+      height: 10px;
+      background: var(--cyan);
+      border-radius: 2px;
+      box-shadow: 0 0 12px rgba(0, 200, 255, 0.5);
+    }
+
+    /* Carbon impact */
+    #carbon-impact,
+    .carbon-impact--page {
+      background: linear-gradient(180deg, #010a1c 0%, var(--navy-deep) 100%);
+    }
+    .carbon-impact__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .carbon-stat-card {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .carbon-stat-card__num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 900;
+      color: var(--cyan);
+      line-height: 1;
+    }
+    .carbon-stat-card__unit {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray-text);
+      margin: 6px 0 12px;
+    }
+    .carbon-stat-card p {
+      font-size: 0.8rem;
+      color: var(--gray-text);
+      line-height: 1.55;
+      margin: 0;
+    }
+    .carbon-impact__detail-inner {
+      background: var(--dark-card);
+      border: 1px solid rgba(0, 200, 255, 0.18);
+      border-radius: 20px;
+      padding: 36px 40px;
+    }
+    .carbon-impact__detail-inner h2,
+    .carbon-impact__detail-inner h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+    .carbon-impact__detail-inner p {
+      color: var(--gray-text);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .carbon-impact__bullets {
+      list-style: none;
+      margin: 20px 0 28px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .carbon-impact__bullets li {
+      font-size: 0.92rem;
+      color: var(--off-white);
+      padding-left: 22px;
+      position: relative;
+    }
+    .carbon-impact__bullets li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+    .carbon-impact__disclaimer {
+      font-size: 0.72rem;
+      color: var(--gray-text);
+      text-align: center;
+      margin-top: 24px;
+      font-style: italic;
+    }
+    @media (max-width: 900px) {
+      .carbon-impact__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .carbon-impact__grid { grid-template-columns: 1fr; }
+      .carbon-impact__detail-inner { padding: 24px 20px; }
+    }
+
+    .page-hero {
+      padding-top: 120px;
+      background: linear-gradient(180deg, #00081e 0%, var(--navy-deep) 100%);
+    }
+
+    .stat-counter--text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--cyan);
+      line-height: 1;
+    }
+
     .logo-text-fallback span { color: var(--cyan); }

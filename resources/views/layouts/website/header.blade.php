@@ -28,6 +28,9 @@
             <ul class="nav-links" role="list">
                 <li><a href="{{ route('index') }}" @if(request()->routeIs('index')) aria-current="page" @endif>Home</a></li>
                 <li><a href="{{ route('index') }}#how-it-works">Technology</a></li>
+                <li><a href="{{ route('index') }}#pod-experience">Private Pod</a></li>
+                <li><a href="{{ route('index') }}#siemens-partnership">Siemens</a></li>
+                <li><a href="{{ route('sustainability') }}">Sustainability</a></li>
                 <li><a href="{{ route('index') }}#about">About</a></li>
                 <li><a href="{{ route('index') }}#prototype">Projects</a></li>
                 <li><a href="{{ route('index') }}#news">News</a></li>
@@ -46,6 +49,9 @@
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
     <a href="{{ route('index') }}">Home</a>
     <a href="{{ route('index') }}#how-it-works">Technology</a>
+    <a href="{{ route('index') }}#pod-experience">Private Pod</a>
+    <a href="{{ route('index') }}#siemens-partnership">Siemens</a>
+    <a href="{{ route('sustainability') }}">Sustainability</a>
     <a href="{{ route('index') }}#about">About</a>
     <a href="{{ route('index') }}#prototype">Projects</a>
     <a href="{{ route('index') }}#news">News</a>

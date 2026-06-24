@@ -134,6 +134,83 @@
       obs.observe(el);
     });
 
+    /* -------- Media rotator (pod experience) -------- */
+    document.querySelectorAll('[data-media-rotator]').forEach(rotator => {
+      const slides = rotator.querySelectorAll('.media-rotator__slide');
+      const tabs = rotator.querySelectorAll('[data-rotator-go]');
+      const autoBtn = rotator.querySelector('.media-rotator__auto');
+      let current = 0;
+      let autoPlay = true;
+      let timer = null;
+      const interval = 6000;
+
+      function pauseVideos(exceptIndex) {
+        slides.forEach((slide, i) => {
+          const video = slide.querySelector('video');
+          if (!video) return;
+          if (i === exceptIndex) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      }
+
+      function goTo(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const active = i === current;
+          slide.classList.toggle('is-active', active);
+          slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+        tabs.forEach((tab, i) => {
+          const active = i === current;
+          tab.classList.toggle('is-active', active);
+          tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        pauseVideos(current);
+      }
+
+      function startAuto() {
+        clearInterval(timer);
+        if (!autoPlay) return;
+        timer = setInterval(() => goTo(current + 1), interval);
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          goTo(parseInt(tab.dataset.rotatorGo, 10));
+          startAuto();
+        });
+      });
+
+      if (autoBtn) {
+        autoBtn.addEventListener('click', () => {
+          autoPlay = !autoPlay;
+          autoBtn.setAttribute('aria-pressed', String(autoPlay));
+          autoBtn.setAttribute('aria-label', autoPlay ? 'Pause automatic rotation' : 'Resume automatic rotation');
+          autoBtn.querySelector('.media-rotator__auto-icon').textContent = autoPlay ? '⏸' : '▶';
+          autoBtn.querySelector('.media-rotator__auto-label').textContent = autoPlay ? 'Auto-rotating' : 'Paused';
+          startAuto();
+        });
+      }
+
+      const rotatorObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            goTo(current);
+            startAuto();
+          } else {
+            clearInterval(timer);
+            pauseVideos(-1);
+          }
+        });
+      }, { threshold: 0.35 });
+      rotatorObs.observe(rotator);
+
+      goTo(0);
+    });
+
     /* -------- Smooth anchor scrolling -------- */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {

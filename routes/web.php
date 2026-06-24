@@ -44,6 +44,7 @@ Route::post('admin/logout', 'admin\AdminController@logOut')->name('admin.logout'
 // Frontend — Phoenix Neat Space Cleaning
 Route::get('/', [WebController::class, 'Index'])->name('index');
 Route::post('quick-contact', [WebController::class, 'submitQuickContact'])->name('quick-contact.submit');
+Route::get('sustainability', [WebController::class, 'Sustainability'])->name('sustainability');
 Route::get('about', [WebController::class, 'About'])->name('about');
 Route::get('books', [WebController::class, 'Books'])->name('books'); 
 Route::get('contact', [WebController::class, 'Contact'])->name('contact'); 

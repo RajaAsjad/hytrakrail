@@ -31,7 +31,7 @@
         </h1>
 
         <p class="hero-sub">
-          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger cars. Zero emissions. 5% cheaper to build than traditional high-speed rail. The future of intercity transit is here.
+          Point-to-point high-speed travel at 250&nbsp;mph. Private 4-passenger pods. Zero emissions. Built for roughly 5% of the cost of conventional high-speed rail projects. The future of intercity transit is here.
         </p>
 
         <div class="hero-actions">
@@ -61,8 +61,8 @@
             <div class="stat-label">Top Speed</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num" aria-label="5% cheaper construction">5%</div>
-            <div class="stat-label">Cheaper to Build vs. HSR</div>
+            <div class="stat-num" aria-label="Approximately 5 percent of conventional rail cost">~5%</div>
+            <div class="stat-label">Of Conventional Rail Cost</div>
           </div>
           <div class="stat-item">
             <div class="stat-num" aria-label="704 MPG equivalent efficiency">~704 MPG</div>
@@ -77,6 +77,122 @@
     </div>
 
   </section>
+
+  <!-- =============================================
+       PRIVATE POD EXPERIENCE — MEDIA SHOWCASE
+  ============================================= -->
+  <section id="pod-experience" class="section-pad pod-experience" aria-labelledby="pod-heading">
+    <div class="container">
+      <div class="pod-experience__grid">
+        <div class="reveal">
+          <div class="section-eyebrow">The Private Pod</div>
+          <h2 class="section-title" id="pod-heading">
+            Your Car.<br />
+            <span class="text-cyan">Your Journey.</span>
+          </h2>
+          <p class="section-desc">
+            Step into a private 4-passenger pod — a personal cabin, not a crowded carriage. Non-stop, point-to-point travel with the comfort and privacy of your own vehicle at 250&nbsp;mph.
+          </p>
+          <p class="section-desc" style="margin-top:16px;">
+            Explore the system from three angles: the rail in motion, the pod interior, and the patented inverted bogie innovation that makes it all possible.
+          </p>
+          <a href="{{ route('index') }}#how-it-works" class="btn-primary" style="margin-top:28px;" aria-label="Learn how Hytrak technology works">
+            How the Technology Works
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+
+        <div class="media-rotator reveal" style="transition-delay:0.12s;" data-media-rotator aria-label="Hytrak system media showcase">
+          <div class="media-rotator__viewport">
+            <div class="media-rotator__slide is-active" data-slide="0" role="tabpanel" aria-label="Hytrak rail system video">
+              <video class="media-rotator__video" muted loop playsinline preload="metadata" poster="">
+                <source src="{{ asset('assets/website/video/Video Curve 2024.mp4') }}" type="video/mp4">
+              </video>
+              <div class="media-rotator__caption">Hytrak elevated rail system in motion</div>
+            </div>
+            <div class="media-rotator__slide" data-slide="1" role="tabpanel" aria-label="Private pod interior" aria-hidden="true">
+              <img
+                src="{{ asset('assets/website/images/pod-interior.svg') }}"
+                alt="Hytrak private 4-passenger pod interior concept — individual seating in a premium cabin"
+                class="media-rotator__image"
+                width="800"
+                height="500"
+                decoding="async"
+              />
+              <div class="media-rotator__caption">Private 4-passenger pod interior</div>
+            </div>
+            <div class="media-rotator__slide" data-slide="2" role="tabpanel" aria-label="Inverted bogie blueprint" aria-hidden="true">
+              <img
+                src="{{ asset('assets/website/images/bogie-blueprint.svg') }}"
+                alt="Engineering blueprint of Hytrak patented inverted bogie wheel system — gravity-augmented design"
+                class="media-rotator__image media-rotator__image--blueprint"
+                width="800"
+                height="500"
+                decoding="async"
+              />
+              <div class="media-rotator__caption">Patented inverted bogie innovation</div>
+            </div>
+          </div>
+          <div class="media-rotator__controls" role="tablist" aria-label="Select media view">
+            <button type="button" class="media-rotator__tab is-active" role="tab" aria-selected="true" data-rotator-go="0">Rail Video</button>
+            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="1">Pod Interior</button>
+            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="2">Bogie Blueprint</button>
+          </div>
+          <button type="button" class="media-rotator__auto" aria-pressed="true" aria-label="Pause automatic rotation">
+            <span class="media-rotator__auto-icon" aria-hidden="true">⏸</span>
+            <span class="media-rotator__auto-label">Auto-rotating</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-line" aria-hidden="true"></div>
+
+  <!-- =============================================
+       SIEMENS PARTNERSHIP — FRONT & CENTER
+  ============================================= -->
+  <section id="siemens-partnership" class="section-pad siemens-spotlight" aria-labelledby="siemens-spotlight-heading">
+    <div class="container">
+      <div class="siemens-spotlight__card reveal">
+        <div class="siemens-spotlight__visual">
+          <img
+            src="{{ asset('assets/website/images/hytrak-siemens-partnership-banner.png') }}"
+            alt="Hytrak Rail Corporation in partnership with Siemens"
+            class="siemens-spotlight__banner"
+            width="1200"
+            height="120"
+            loading="lazy"
+          />
+        </div>
+        <div class="siemens-spotlight__body">
+          <div class="section-eyebrow">Strategic Partnership</div>
+          <h2 class="section-title" id="siemens-spotlight-heading">
+            Engineering the Future<br />
+            <span class="text-cyan">With Siemens.</span>
+          </h2>
+          <p class="section-desc">
+            Hytrak Rail partners with <strong>Siemens</strong> — a global leader in industrial automation, digital twin simulation, and smart infrastructure — to accelerate our elevated rail platform from prototype validation through corridor-scale deployment.
+          </p>
+          <ul class="siemens-spotlight__list" role="list">
+            <li>Industrial automation &amp; control systems</li>
+            <li>Digital twin corridor simulation</li>
+            <li>Smart infrastructure &amp; predictive maintenance</li>
+            <li>Scalable deployment engineering</li>
+          </ul>
+          <div class="siemens-spotlight__actions">
+            <a href="https://www.siemens.com/en-us/" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Visit Siemens website">
+              Explore Siemens
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="{{ route('index') }}#how-it-works" class="btn-ghost">See the Technology</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-line" aria-hidden="true"></div>
 
   <!-- =============================================
        SECTION 2: THE PROBLEM
@@ -153,8 +269,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               </div>
               <div class="solution-item-text">
-                <h4>5% Cheaper Construction</h4>
-                <p>Lightweight elevated towers require minimal land acquisition and dramatically reduce civil works cost per mile.</p>
+                <h4>~5% of Conventional Rail Cost</h4>
+                <p>Lightweight elevated towers require minimal land acquisition — civil works cost a fraction of traditional high-speed rail per mile.</p>
               </div>
             </div>
             <div class="solution-item">
@@ -262,24 +378,13 @@
           <p class="section-desc">
             Every design decision in Hytrak was made to maximize speed, safety, sustainability, and affordability simultaneously — not trade one for another.
           </p>
-          <div style="margin-top: 32px; display:flex; flex-direction:column; gap:14px;">
-            <div style="display:flex; align-items:center; gap:12px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span style="font-size:0.9rem; color:var(--off-white);">Operates in rain, snow, wind & fog — fully weatherproof</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span style="font-size:0.9rem; color:var(--off-white);">Estimated $1M revenue per mile annually</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span style="font-size:0.9rem; color:var(--off-white);">20,000 passengers per day per system</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              <span style="font-size:0.9rem; color:var(--off-white);">Buildable alongside existing highway right-of-way</span>
-            </div>
-          </div>
+          <ul class="benefits-key-list" role="list" aria-label="Key Hytrak benefits">
+            <li>Operates in rain, snow, wind &amp; fog — fully weatherproof</li>
+            <li>Estimated $1M revenue per mile annually</li>
+            <li>20,000 passengers per day per system</li>
+            <li>Buildable alongside existing highway right-of-way</li>
+            <li>Backed by Siemens engineering &amp; automation partnership</li>
+          </ul>
         </div>
         <div class="reveal" style="transition-delay:0.1s;">
           <!-- Large feature image -->
@@ -391,8 +496,8 @@
               <div class="spec-label">Tower Span</div>
             </div>
             <div class="tech-spec-item">
-              <div class="spec-val">5%</div>
-              <div class="spec-label">Cost Savings vs. HSR</div>
+              <div class="spec-val">~5%</div>
+              <div class="spec-label">Of Conventional HSR Cost</div>
             </div>
           </div>
 
@@ -572,21 +677,21 @@
           </div>
           <div class="proto-gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=80&auto=format&fit=crop"
-              alt="Close-up of an elevated rail support tower showing precision steel engineering similar to the Hytrak tower system"
+              src="{{ asset('assets/website/images/pod-interior.svg') }}"
+              alt="Hytrak private 4-passenger pod interior — premium private cabin experience"
               loading="lazy"
             />
             <div class="proto-gallery-overlay" aria-hidden="true"></div>
-            <div class="proto-gallery-label">Support Tower Detail</div>
+            <div class="proto-gallery-label">Private Pod Interior</div>
           </div>
           <div class="proto-gallery-item">
             <img
-              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80&auto=format&fit=crop"
-              alt="Interior view of a sleek modern passenger car representing the Hytrak 4-passenger private car experience"
+              src="{{ asset('assets/website/images/bogie-blueprint.svg') }}"
+              alt="Hytrak patented inverted bogie wheel system engineering blueprint"
               loading="lazy"
             />
             <div class="proto-gallery-overlay" aria-hidden="true"></div>
-            <div class="proto-gallery-label">Car Interior Concept</div>
+            <div class="proto-gallery-label">Bogie Innovation Blueprint</div>
           </div>
 
           <div style="grid-column:span 2; margin-top:16px; text-align:center;">
@@ -684,6 +789,69 @@
 
     </div>
   </section>
+
+  <!-- =============================================
+       CARBON IMPACT — AUSTIN / SAN ANTONIO CORRIDOR
+  ============================================= -->
+  <section id="carbon-impact" class="section-pad carbon-impact" aria-labelledby="carbon-heading">
+    <div class="container">
+      <div class="carbon-impact__intro reveal" style="text-align:center; margin-bottom:56px;">
+        <div class="section-eyebrow" style="justify-content:center;">Environmental Impact</div>
+        <h2 class="section-title" id="carbon-heading">
+          Massive <span class="text-cyan">Carbon Savings</span><br />
+          Per Corridor
+        </h2>
+        <p class="section-desc mx-auto" style="text-align:center;">
+          Hytrak's fully electric, lightweight pods deliver zero operational emissions — with a construction footprint a fraction of conventional rail. Our preliminary analysis of the proposed <strong>Amazon · Austin to San Antonio</strong> corridor illustrates the scale of impact.
+        </p>
+      </div>
+
+      <div class="carbon-impact__grid">
+        <div class="carbon-stat-card reveal">
+          <div class="carbon-stat-card__num">~82</div>
+          <div class="carbon-stat-card__unit">miles</div>
+          <p>Corridor length — Austin hub to San Antonio hub along the I-35 tech corridor</p>
+        </div>
+        <div class="carbon-stat-card reveal" style="transition-delay:0.06s;">
+          <div class="carbon-stat-card__num">~185K</div>
+          <div class="carbon-stat-card__unit">tons CO₂/yr</div>
+          <p>Estimated annual emissions offset vs. equivalent single-occupancy vehicle trips at full ridership</p>
+        </div>
+        <div class="carbon-stat-card reveal" style="transition-delay:0.12s;">
+          <div class="carbon-stat-card__num">~95%</div>
+          <div class="carbon-stat-card__unit">less construction</div>
+          <p>Embodied carbon in civil works vs. a ground-level high-speed rail alternative on the same route</p>
+        </div>
+        <div class="carbon-stat-card reveal" style="transition-delay:0.18s;">
+          <div class="carbon-stat-card__num">Zero</div>
+          <div class="carbon-stat-card__unit">operational</div>
+          <p>Direct carbon emissions during daily operation — 100% electric propulsion</p>
+        </div>
+      </div>
+
+      <div class="carbon-impact__detail reveal" style="transition-delay:0.1s;">
+        <div class="carbon-impact__detail-inner">
+          <h3>Amazon · Austin–San Antonio Corridor Study</h3>
+          <p>
+            Hytrak's preliminary corridor analysis models a high-frequency private-pod network connecting major employment centers — including Amazon's Austin-area operations — to San Antonio in under 25 minutes at 250&nbsp;mph. Compared to the ~2.5-hour drive or short-haul flight alternative, the system projects substantial per-passenger carbon reductions while eliminating highway congestion growth along I-35.
+          </p>
+          <ul class="carbon-impact__bullets" role="list">
+            <li><strong>20,000+ daily passengers</strong> shifted from auto and short-haul air</li>
+            <li><strong>~704 MPG equivalent</strong> energy efficiency per passenger-mile</li>
+            <li><strong>Minimal land disruption</strong> — slender towers alongside existing easements</li>
+            <li><strong>No diesel or jet fuel</strong> — grid-powered electric operation</li>
+          </ul>
+          <a href="{{ route('sustainability') }}" class="btn-primary" aria-label="Read the full carbon impact analysis">
+            Full Carbon Impact Analysis
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="carbon-impact__disclaimer reveal">* Preliminary corridor modeling based on Hytrak engineering estimates. Full methodology and assumptions available on the sustainability page.</p>
+    </div>
+  </section>
+
+  <div class="divider-line" aria-hidden="true"></div>
 
   <!-- =============================================
        SECTION 8: COMPARISON
@@ -825,6 +993,10 @@
           <span>California Startup Ecosystem</span>
         </div>
         <div class="marquee-item">
+          <img src="{{ asset('assets/website/siemens-logo.svg') }}" alt="" width="72" height="14" style="opacity:0.9; filter:brightness(2);" aria-hidden="true" />
+          <span>Siemens Engineering Partnership</span>
+        </div>
+        <div class="marquee-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
           <span>Mark Mitchell, P.E. · Founder & CEO</span>
         </div>
@@ -850,6 +1022,10 @@
           <span>California Startup Ecosystem</span>
         </div>
         <div class="marquee-item">
+          <img src="{{ asset('assets/website/siemens-logo.svg') }}" alt="" width="72" height="14" style="opacity:0.9; filter:brightness(2);" aria-hidden="true" />
+          <span>Siemens Engineering Partnership</span>
+        </div>
+        <div class="marquee-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
           <span>Mark Mitchell, P.E. · Founder & CEO</span>
         </div>
@@ -863,8 +1039,8 @@
           <p>mph Top Speed</p>
         </div>
         <div class="stats-card reveal" style="transition-delay:0.08s;">
-          <span class="stat-counter" data-target="50" aria-label="50 times cheaper construction" data-suffix="×">0</span>
-          <p>Cheaper Than HSR</p>
+          <span class="stat-counter stat-counter--text" aria-label="Approximately 5 percent of conventional high-speed rail cost">~5%</span>
+          <p>Of Conventional HSR Cost</p>
         </div>
         <div class="stats-card reveal" style="transition-delay:0.16s;">
           <span class="stat-counter" data-target="20" aria-label="20 thousand passengers per day" data-suffix="K">0</span>
@@ -950,7 +1126,7 @@
           <div class="news-card-body">
             <span class="news-tag">California</span>
             <h4>While California HSR Costs Soar, Hytrak Offers a Smarter Path</h4>
-            <p>As the state's traditional high-speed rail program faces renewed scrutiny over costs and delays, Hytrak's 50× cheaper elevated system presents a compelling alternative for state legislators and investors.</p>
+            <p>As the state's traditional high-speed rail program faces renewed scrutiny over costs and delays, Hytrak's elevated system — built for roughly 5% of conventional rail project costs — presents a compelling alternative for state legislators and investors.</p>
             <div class="news-card-meta">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
               <span>January 2025</span>

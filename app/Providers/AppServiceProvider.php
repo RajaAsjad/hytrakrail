@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -24,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (! $this->app->runningInConsole() && app()->environment('local')) {
+            URL::forceRootUrl(request()->getSchemeAndHttpHost());
+        }
+
         $compiledViews = config('view.compiled');
         if (is_string($compiledViews) && $compiledViews !== '' && ! is_dir($compiledViews)) {
             @mkdir($compiledViews, 0755, true);
