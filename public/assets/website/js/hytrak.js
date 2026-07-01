@@ -32,13 +32,16 @@
       menuOpen = open;
       hamburger.classList.toggle('active', open);
       mobileMenu.classList.toggle('open', open);
+      if (nav) nav.classList.toggle('nav-menu-open', open);
       hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      mobileMenu.setAttribute('aria-hidden', String(!open));
       document.body.style.overflow = open ? 'hidden' : '';
     }
 
     hamburger.addEventListener('click', () => toggleMenu(!menuOpen));
 
-    mobileMenu.querySelectorAll('a').forEach(link => {
+    mobileMenu.querySelectorAll('.mobile-menu__links a').forEach(link => {
       link.addEventListener('click', () => toggleMenu(false));
     });
 
@@ -134,13 +137,11 @@
       obs.observe(el);
     });
 
-    /* -------- Media rotator (pod experience) -------- */
+    /* -------- Media rotator (car experience) -------- */
     document.querySelectorAll('[data-media-rotator]').forEach(rotator => {
       const slides = rotator.querySelectorAll('.media-rotator__slide');
       const tabs = rotator.querySelectorAll('[data-rotator-go]');
-      const autoBtn = rotator.querySelector('.media-rotator__auto');
       let current = 0;
-      let autoPlay = true;
       let timer = null;
       const interval = 6000;
 
@@ -173,7 +174,6 @@
 
       function startAuto() {
         clearInterval(timer);
-        if (!autoPlay) return;
         timer = setInterval(() => goTo(current + 1), interval);
       }
 
@@ -183,17 +183,6 @@
           startAuto();
         });
       });
-
-      if (autoBtn) {
-        autoBtn.addEventListener('click', () => {
-          autoPlay = !autoPlay;
-          autoBtn.setAttribute('aria-pressed', String(autoPlay));
-          autoBtn.setAttribute('aria-label', autoPlay ? 'Pause automatic rotation' : 'Resume automatic rotation');
-          autoBtn.querySelector('.media-rotator__auto-icon').textContent = autoPlay ? '⏸' : '▶';
-          autoBtn.querySelector('.media-rotator__auto-label').textContent = autoPlay ? 'Auto-rotating' : 'Paused';
-          startAuto();
-        });
-      }
 
       const rotatorObs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -207,6 +196,54 @@
         });
       }, { threshold: 0.35 });
       rotatorObs.observe(rotator);
+
+      goTo(0);
+    });
+
+    /* -------- Benefits image slider -------- */
+    document.querySelectorAll('[data-benefits-slider]').forEach(slider => {
+      const slides = slider.querySelectorAll('.benefits-slider__slide');
+      const dots = slider.querySelectorAll('[data-benefits-go]');
+      let current = 0;
+      let timer = null;
+      const interval = 5000;
+
+      function goTo(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const active = i === current;
+          slide.classList.toggle('is-active', active);
+          slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+        dots.forEach((dot, i) => {
+          const active = i === current;
+          dot.classList.toggle('is-active', active);
+          dot.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+      }
+
+      function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), interval);
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          goTo(parseInt(dot.dataset.benefitsGo, 10));
+          startAuto();
+        });
+      });
+
+      const sliderObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            startAuto();
+          } else {
+            clearInterval(timer);
+          }
+        });
+      }, { threshold: 0.35 });
+      sliderObs.observe(slider);
 
       goTo(0);
     });

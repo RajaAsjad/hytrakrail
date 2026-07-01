@@ -22,8 +22,7 @@
     <div class="hero-mesh" aria-hidden="true"></div>
 
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-eyebrow" role="text">Patented Technology · Lakeport, CA</div>
+      <div class="hero-content"> 
 
         <h1 class="hero-title">
           Get Places<br />
@@ -79,22 +78,22 @@
   </section>
 
   <!-- =============================================
-       PRIVATE POD EXPERIENCE — MEDIA SHOWCASE
+       PRIVATE CAR EXPERIENCE — MEDIA SHOWCASE
   ============================================= -->
   <section id="pod-experience" class="section-pad pod-experience" aria-labelledby="pod-heading">
     <div class="container">
       <div class="pod-experience__grid">
         <div class="reveal">
-          <div class="section-eyebrow">The Private Pod</div>
+          <div class="section-eyebrow">The Private Car</div>
           <h2 class="section-title" id="pod-heading">
             Your Car.<br />
             <span class="text-cyan">Your Journey.</span>
           </h2>
           <p class="section-desc">
-            Step into a private 4-passenger pod — a personal cabin, not a crowded carriage. Non-stop, point-to-point travel with the comfort and privacy of your own vehicle at 250&nbsp;mph.
+            Step into a private 4-passenger car — a personal cabin, not a crowded carriage. Non-stop, point-to-point travel with the comfort and privacy of your own vehicle at 250&nbsp;mph.
           </p>
           <p class="section-desc" style="margin-top:16px;">
-            Explore the system from three angles: the rail in motion, the pod interior, and the patented inverted bogie innovation that makes it all possible.
+            Explore the system from three angles: the rail in motion, the speed, and the depot.
           </p>
           <a href="{{ route('index') }}#how-it-works" class="btn-primary" style="margin-top:28px;" aria-label="Learn how Hytrak technology works">
             How the Technology Works
@@ -102,46 +101,32 @@
           </a>
         </div>
 
-        <div class="media-rotator reveal" style="transition-delay:0.12s;" data-media-rotator aria-label="Hytrak system media showcase">
+        <div class="media-rotator reveal" style="transition-delay:0.12s;" data-media-rotator aria-label="Hytrak system video showcase">
           <div class="media-rotator__viewport">
-            <div class="media-rotator__slide is-active" data-slide="0" role="tabpanel" aria-label="Hytrak rail system video">
-              <video class="media-rotator__video" muted loop playsinline preload="metadata" poster="">
-                <source src="{{ asset('assets/website/video/Video Curve 2024.mp4') }}" type="video/mp4">
+            <div class="media-rotator__slide is-active" data-slide="0" role="tabpanel" aria-label="Curve simple system video">
+              <video class="media-rotator__video" muted loop playsinline preload="metadata">
+                <source src="{{ asset('assets/website/video/curve-simple.mp4') }}" type="video/mp4">
               </video>
-              <div class="media-rotator__caption">Hytrak elevated rail system in motion</div>
+              <div class="media-rotator__caption">Curve — elevated rail in motion</div>
             </div>
-            <div class="media-rotator__slide" data-slide="1" role="tabpanel" aria-label="Private pod interior" aria-hidden="true">
-              <img
-                src="{{ asset('assets/website/images/pod-interior.svg') }}"
-                alt="Hytrak private 4-passenger pod interior concept — individual seating in a premium cabin"
-                class="media-rotator__image"
-                width="800"
-                height="500"
-                decoding="async"
-              />
-              <div class="media-rotator__caption">Private 4-passenger pod interior</div>
+            <div class="media-rotator__slide" data-slide="1" role="tabpanel" aria-label="Fast simple system video" aria-hidden="true">
+              <video class="media-rotator__video" muted loop playsinline preload="metadata">
+                <source src="{{ asset('assets/website/video/fast-simple.mp4') }}" type="video/mp4">
+              </video>
+              <div class="media-rotator__caption">Fast — high-speed point-to-point travel</div>
             </div>
-            <div class="media-rotator__slide" data-slide="2" role="tabpanel" aria-label="Inverted bogie blueprint" aria-hidden="true">
-              <img
-                src="{{ asset('assets/website/images/bogie-blueprint.svg') }}"
-                alt="Engineering blueprint of Hytrak patented inverted bogie wheel system — gravity-augmented design"
-                class="media-rotator__image media-rotator__image--blueprint"
-                width="800"
-                height="500"
-                decoding="async"
-              />
-              <div class="media-rotator__caption">Patented inverted bogie innovation</div>
+            <div class="media-rotator__slide" data-slide="2" role="tabpanel" aria-label="Depot simple system video" aria-hidden="true">
+              <video class="media-rotator__video" muted loop playsinline preload="metadata">
+                <source src="{{ asset('assets/website/video/depot-simple.mp4') }}" type="video/mp4">
+              </video>
+              <div class="media-rotator__caption">Depot — hub operations &amp; boarding</div>
             </div>
           </div>
-          <div class="media-rotator__controls" role="tablist" aria-label="Select media view">
-            <button type="button" class="media-rotator__tab is-active" role="tab" aria-selected="true" data-rotator-go="0">Rail Video</button>
-            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="1">Pod Interior</button>
-            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="2">Bogie Blueprint</button>
+          <div class="media-rotator__controls" role="tablist" aria-label="Select video view">
+            <button type="button" class="media-rotator__tab is-active" role="tab" aria-selected="true" data-rotator-go="0">Curve Simple</button>
+            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="1">Fast Simple</button>
+            <button type="button" class="media-rotator__tab" role="tab" aria-selected="false" data-rotator-go="2">Depot Simple</button>
           </div>
-          <button type="button" class="media-rotator__auto" aria-pressed="true" aria-label="Pause automatic rotation">
-            <span class="media-rotator__auto-icon" aria-hidden="true">⏸</span>
-            <span class="media-rotator__auto-label">Auto-rotating</span>
-          </button>
         </div>
       </div>
     </div>
@@ -152,7 +137,7 @@
   <!-- =============================================
        SIEMENS PARTNERSHIP — FRONT & CENTER
   ============================================= -->
-  <section id="siemens-partnership" class="section-pad siemens-spotlight" aria-labelledby="siemens-spotlight-heading">
+  {{-- <section id="siemens-partnership" class="section-pad siemens-spotlight" aria-labelledby="siemens-spotlight-heading">
     <div class="container">
       <div class="siemens-spotlight__card reveal">
         <div class="siemens-spotlight__visual">
@@ -190,7 +175,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
 
   <div class="divider-line" aria-hidden="true"></div>
 
@@ -387,17 +372,59 @@
           </ul>
         </div>
         <div class="reveal" style="transition-delay:0.1s;">
-          <!-- Large feature image -->
-          <div style="border-radius:24px; overflow:hidden; border:1px solid var(--border); aspect-ratio:4/3; background:var(--dark-card); position:relative;">
-            <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop"
-              alt="Elevated rail infrastructure viewed from below — representing the Hytrak elevated car system over a highway corridor"
-              style="width:100%; height:100%; object-fit:cover;"
-              loading="lazy"
-            />
-            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,8,30,0.65) 0%,transparent 60%);"></div>
-            <div style="position:absolute;bottom:20px;left:20px;">
-              <div class="tag-pill">Hytrak Prototype · Lake County, CA</div>
+          @php
+            $benefitsSlides = [
+              [
+                'src' => asset('assets/website/images/benefits/slide-1.png'),
+                'alt' => 'Engineering and prototype development for the Hytrak elevated rail system',
+              ],
+              [
+                'src' => asset('assets/website/images/benefits/slide-2.png'),
+                'alt' => 'Hytrak infrastructure and development facility',
+              ],
+              [
+                'src' => asset('assets/website/images/benefits/slide-3.png'),
+                'alt' => 'Hytrak Rail Corporation business and industry coverage',
+              ],
+              [
+                'src' => asset('assets/website/images/benefits/slide-4.png'),
+                'alt' => 'Construction and infrastructure development for next-generation transit systems',
+              ],
+            ];
+          @endphp
+          <div class="benefits-slider" data-benefits-slider aria-label="Hytrak system photo gallery">
+            <div class="benefits-slider__viewport">
+              @foreach ($benefitsSlides as $index => $slide)
+                <div
+                  class="benefits-slider__slide{{ $index === 0 ? ' is-active' : '' }}"
+                  data-slide="{{ $index }}"
+                  role="tabpanel"
+                  aria-label="Hytrak system photo {{ $index + 1 }}"
+                  @if ($index !== 0) aria-hidden="true" @endif
+                >
+                  <img
+                    src="{{ $slide['src'] }}"
+                    alt="{{ $slide['alt'] }}"
+                    class="benefits-slider__image"
+                    width="900"
+                    height="675"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
+              @endforeach
+            </div>
+            <div class="benefits-slider__dots" role="tablist" aria-label="Select gallery photo">
+              @foreach ($benefitsSlides as $index => $slide)
+                <button
+                  type="button"
+                  class="benefits-slider__dot{{ $index === 0 ? ' is-active' : '' }}"
+                  role="tab"
+                  aria-selected="{{ $index === 0 ? 'true' : 'false' }}"
+                  aria-label="Photo {{ $index + 1 }}"
+                  data-benefits-go="{{ $index }}"
+                ></button>
+              @endforeach
             </div>
           </div>
         </div>
@@ -526,7 +553,7 @@
       </div>
 
       <!-- Siemens Engineering & Automation Partnership -->
-      <div class="tech-partnership reveal" aria-labelledby="siemens-partnership-heading">
+      {{-- <div class="tech-partnership reveal" aria-labelledby="siemens-partnership-heading">
         <div class="tech-partnership__card">
           <div class="tech-partnership__top">
             <div class="tech-partnership__brand">
@@ -575,7 +602,7 @@
             <li>Predictive Maintenance</li>
           </ul>
         </div>
-      </div>
+      </div> --}}
 
     </div>
   </section>
@@ -648,7 +675,7 @@
               <div class="timeline-body">
                 <span>2024–2025 — In Progress</span>
                 <h4>Investment & Pilot Corridor Development</h4>
-                <p>Seeking strategic investment partners and government agencies for pilot corridor implementation in California.</p>
+                <p>Seeking strategic investment partners and government agencies for pilot corridor implementation in California, Nevada, and Texas.</p>
               </div>
             </div>
             <div class="timeline-item" role="listitem">
@@ -668,8 +695,8 @@
         <div class="proto-gallery reveal" style="transition-delay:0.15s;" aria-label="Hytrak prototype photo gallery">
           <div class="proto-gallery-item" style="grid-column:span 2; aspect-ratio:16/7;">
             <img
-              src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=900&q=80&auto=format&fit=crop"
-              alt="Wide aerial view of an elevated monorail-style rail system alongside a highway — representing the Hytrak elevated track and tower system"
+              src="{{ asset('assets/website/images/prototype/image-7.png') }}"
+              alt="Hytrak elevated track system construction and infrastructure development — Lake County, California"
               loading="lazy"
             />
             <div class="proto-gallery-overlay" aria-hidden="true"></div>
@@ -722,7 +749,7 @@
         </p>
       </div>
 
-      <div class="services-grid">
+      {{-- <div class="services-grid">
 
         <div class="service-card reveal" style="transition-delay:0s;">
           <div class="service-num">01</div>
@@ -785,7 +812,7 @@
           Discuss Your Project
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-      </div>
+      </div> --}}
 
     </div>
   </section>
@@ -833,7 +860,7 @@
         <div class="carbon-impact__detail-inner">
           <h3>Amazon · Austin–San Antonio Corridor Study</h3>
           <p>
-            Hytrak's preliminary corridor analysis models a high-frequency private-pod network connecting major employment centers — including Amazon's Austin-area operations — to San Antonio in under 25 minutes at 250&nbsp;mph. Compared to the ~2.5-hour drive or short-haul flight alternative, the system projects substantial per-passenger carbon reductions while eliminating highway congestion growth along I-35.
+            Hytrak's preliminary corridor analysis models a high-frequency private-car network connecting major employment centers — including Amazon's Austin-area operations — to San Antonio in under 25 minutes at 250&nbsp;mph. Compared to the ~2.5-hour drive or short-haul flight alternative, the system projects substantial per-passenger carbon reductions while eliminating highway congestion growth along I-35.
           </p>
           <ul class="carbon-impact__bullets" role="list">
             <li><strong>20,000+ daily passengers</strong> shifted from auto and short-haul air</li>
@@ -1180,7 +1207,7 @@
           </div>
         </article>
 
-        <!-- Supporting team cards -->
+        {{-- <!-- Supporting team cards -->
         <article class="team-card reveal" style="transition-delay:0.08s;" aria-label="Engineering team member">
           <img
             class="team-card-photo"
@@ -1207,16 +1234,16 @@
             <h4>Partnership Team</h4>
             <p>Specialists in public-private partnership structuring, investor relations, and government liaison for municipal and regional transit agencies.</p>
           </div>
-        </article>
+        </article> --}}
 
       </div>
 
-      <div class="reveal" style="text-align:center; margin-top:40px;">
+     {{--  <div class="reveal" style="text-align:center; margin-top:40px;">
         <a href="{{ route('index') }}#team" class="btn-ghost" aria-label="Learn more about the full Hytrak team">
           Meet the Full Team
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-      </div>
+      </div> --}}
 
     </div>
   </section>
@@ -1236,11 +1263,11 @@
           Whether you're a government agency, private investor, transit authority, or real estate developer — Hytrak is ready to work with you to bring next-generation intercity travel to your corridor.
         </p>
         <div class="cta-actions reveal">
-          <a href="{{ route('index') }}#quick-contact" class="btn-primary" aria-label="Schedule a demo with Hytrak Rail">
+          {{-- <a href="{{ route('index') }}#quick-contact" class="btn-primary" aria-label="Schedule a demo with Hytrak Rail">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 9.8 19.79 19.79 0 0 1 1.61 1.18 2 2 0 0 1 3.6 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6.08 6.08l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Schedule a Demo
-          </a>
-          <a href="{{ route('index') }}#quick-contact" class="btn-ghost" aria-label="Investor inquiries for Hytrak Rail">
+          </a> --}}
+          <a href="{{ route('index') }}#quick-contact" class="btn-primary" aria-label="Investor inquiries for Hytrak Rail">
             Investor Inquiry
           </a>
           <a href="{{ route('index') }}#quick-contact" class="btn-ghost" aria-label="Partnership proposals for Hytrak Rail">

@@ -15,7 +15,7 @@
 </head>
 <body>
     <h2>New Booking / Contact Submission</h2>
-    <p>You have received a new message from the Perry Grant website:</p>
+    <p>You have received a new message from the Hytrak Rail Corporation website:</p>
 
     <div class="field"><span class="label">Name:</span><span class="value">{{ $contact['full_name'] ?? $contact['name'] ?? (($contact['first_name'] ?? '') . ' ' . ($contact['last_name'] ?? '')) }}</span></div>
     <div class="field"><span class="label">Email:</span><span class="value">{{ $contact['email'] }}</span></div>
@@ -28,6 +28,6 @@
         <div class="message-box">{{ $contact['message'] }}</div>
     </div>
 
-    <p style="margin-top: 24px; font-size: 12px; color: #666;">Sent from Perry Grant website contact form.</p>
+    <p style="margin-top: 24px; font-size: 12px; color: #666;">Sent from Hytrak Rail Corporation website contact form.</p>
 </body>
 </html>
