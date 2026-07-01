@@ -137,45 +137,48 @@
   <!-- =============================================
        SIEMENS PARTNERSHIP — FRONT & CENTER
   ============================================= -->
-  {{-- <section id="siemens-partnership" class="section-pad siemens-spotlight" aria-labelledby="siemens-spotlight-heading">
+   <section id="siemens-partnership" class="section-pad siemens-spotlight" aria-labelledby="siemens-spotlight-heading">
     <div class="container">
       <div class="siemens-spotlight__card reveal">
-        <div class="siemens-spotlight__visual">
-          <img
-            src="{{ asset('assets/website/images/hytrak-siemens-partnership-banner.png') }}"
-            alt="Hytrak Rail Corporation in partnership with Siemens"
-            class="siemens-spotlight__banner"
-            width="1200"
-            height="120"
-            loading="lazy"
-          />
-        </div>
-        <div class="siemens-spotlight__body">
-          <div class="section-eyebrow">Strategic Partnership</div>
-          <h2 class="section-title" id="siemens-spotlight-heading">
-            Engineering the Future<br />
-            <span class="text-cyan">With Siemens.</span>
-          </h2>
-          <p class="section-desc">
-            Hytrak Rail partners with <strong>Siemens</strong> — a global leader in industrial automation, digital twin simulation, and smart infrastructure — to accelerate our elevated rail platform from prototype validation through corridor-scale deployment.
-          </p>
-          <ul class="siemens-spotlight__list" role="list">
-            <li>Industrial automation &amp; control systems</li>
-            <li>Digital twin corridor simulation</li>
-            <li>Smart infrastructure &amp; predictive maintenance</li>
-            <li>Scalable deployment engineering</li>
-          </ul>
-          <div class="siemens-spotlight__actions">
-            <a href="https://www.siemens.com/en-us/" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Visit Siemens website">
-              Explore Siemens
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-            <a href="{{ route('index') }}#how-it-works" class="btn-ghost">See the Technology</a>
+        <div class="siemens-spotlight__grid">
+          <div class="siemens-spotlight__body">
+            <div class="section-eyebrow">Strategic Partnership</div>
+            <h2 class="section-title" id="siemens-spotlight-heading">
+              Engineering the Future<br />
+              <span class="text-cyan">With Siemens.</span>
+            </h2>
+            <p class="section-desc">
+              Hytrak Rail partners with <strong>Siemens</strong> — a global leader in industrial automation, digital twin simulation, and smart infrastructure — to accelerate our elevated rail platform from prototype validation through corridor-scale deployment.
+            </p>
+            <ul class="siemens-spotlight__list" role="list">
+              <li>Industrial automation &amp; control systems</li>
+              <li>Digital twin corridor simulation</li>
+              <li>Smart infrastructure &amp; predictive maintenance</li>
+              <li>Scalable deployment engineering</li>
+            </ul>
+            <div class="siemens-spotlight__actions">
+              <a href="https://www.siemens.com/en-us/" class="btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Visit Siemens website">
+                Explore Siemens
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="{{ route('index') }}#how-it-works" class="btn-ghost">See the Technology</a>
+            </div>
+          </div>
+          <div class="siemens-spotlight__logo-wrap">
+            <img
+              src="{{ asset('assets/website/images/siemens-logo.png') }}"
+              alt="Siemens"
+              class="siemens-spotlight__logo"
+              width="320"
+              height="120"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>
     </div>
-  </section> --}}
+  </section> 
 
   <div class="divider-line" aria-hidden="true"></div>
 

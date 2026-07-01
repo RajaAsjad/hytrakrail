@@ -2410,6 +2410,26 @@
       background: rgba(0, 20, 60, 0.4);
       box-shadow: 0 12px 48px rgba(0, 31, 91, 0.3);
     }
+    .siemens-spotlight__grid {
+      display: grid;
+      grid-template-columns: 1fr min(320px, 34%);
+      gap: 32px;
+      align-items: start;
+    }
+    .siemens-spotlight__logo-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 36px 32px 36px 0;
+    }
+    .siemens-spotlight__logo {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      object-fit: contain;
+    }
     .siemens-spotlight__visual {
       padding: 32px 32px 0;
       text-align: center;
@@ -2463,9 +2483,29 @@
       flex-wrap: wrap;
       gap: 12px;
     }
+    @media (max-width: 900px) {
+      .siemens-spotlight__grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .siemens-spotlight__logo-wrap {
+        order: -1;
+        padding: 28px 24px 0;
+        justify-content: flex-start;
+      }
+      .siemens-spotlight__logo {
+        max-width: 220px;
+      }
+    }
     @media (max-width: 600px) {
       .siemens-spotlight__list { grid-template-columns: 1fr; }
       .siemens-spotlight__body { padding: 28px 24px 36px; }
+      .siemens-spotlight__logo-wrap {
+        padding: 24px 24px 0;
+      }
+      .siemens-spotlight__logo {
+        max-width: 200px;
+      }
     }
 
     /* Benefits key list (larger) */
